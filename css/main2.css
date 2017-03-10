@@ -1,9 +1,7 @@
-html, body {
-  height: 100%; }
-
 header {
   background-image: url(http://wallpaper-gallery.net/images/mountain-wallpaper/mountain-wallpaper-12.jpg);
-  height: 100%;
-  background-size: cover; }
+  height: 100vh;
+  background-size: cover;
+  background-size: 100% 100%; }
 
 /*# sourceMappingURL=main2.css.map */
