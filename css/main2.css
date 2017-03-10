@@ -1,7 +1,32 @@
 header {
-  background-image: url(http://wallpaper-gallery.net/images/mountain-wallpaper/mountain-wallpaper-12.jpg);
-  height: 100vh;
+  background-image: url(../img/mwE2Jf.jpg);
   background-size: cover;
-  background-size: 100% 100%; }
+  background-position: center;
+  height: 100vh;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+p {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto 20px; }
+
+header h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 150px;
+  color: white;
+  background-color: black;
+  padding-left: 15px;
+  padding-right: 15px; }
+header h4 {
+  font-family: "Bevan", cursive;
+  font-size: 50px;
+  color: white;
+  background-color: black;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 /*# sourceMappingURL=main2.css.map */
