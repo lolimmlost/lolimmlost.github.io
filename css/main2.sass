@@ -25,19 +25,20 @@ header
     font-family: 'Abril Fatface','Alfa Slab One', Georgia
     font-size: 150px
     color: white
-    background-color: black
-    padding:
-      left: 15px
-      right: 15px
+    span
+      display: inline-block
+      background: black
+      padding: 0 0.2em
+
   h4
+    span
+      background: black
+      display: inline-block
+      padding: 0 0.2em 0.2em
+
     font-family: 'Abril Fatface', Georgia
     font-size: 75px
     color: white
-    background-color: black
-    padding:
-      left: 15px
-      right: 15px
-      bottom: 15px
 body
   font-family: Georgia
   p
@@ -47,3 +48,8 @@ body
     margin: 0 auto 50px
     height: 300
     width: 70%
+
+
+@media screen and (max-width: 1300px)
+  h1
+    font-size: 60px
