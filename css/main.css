@@ -1,53 +1,5 @@
-html {
-  width: 100%;
-  height: 100%; }
 
-div.titles {
-  height: 100%; }
 
-body h1 {
-  font-family: 'Open Sans',serif;
-  font-size: 50px;
-  color: #4040a1;
-  margin: 50px; }
-body h1.title_text {
-  float: left; }
-body h1.title_subtitle {
-  float: right; }
-body div.main_holder {
-  align-items: center;
-  text-align: block;
-  object-fit: contain; }
-body div.Image_line {
-  margin: 200px;
-  align-items: center; }
-  body div.Image_line div.image_text {
-    text-align: center;
-    border-bottom: 1px solid #d3d3d3; }
-  body div.Image_line img {
-    width: 95%;
-    margin: 30px;
-    align-items: center;
-    height: auto;
-    box-shadow: 1px 6px 20px #9ab7d3; }
-  body div.Image_line h2 {
-    font-family: 'Open Sans',serif;
-    font-weight: 600;
-    text-align: center; }
-
-footer {
-  margin: 5px auto 10px;
-  border-top: 1px solid #d3d3d3;
-  width: 80%; }
-  footer ul {
-    margin: 0;
-    padding: 0;
-    text-align: center; }
-    footer ul li {
-      font-family: 'Open Sans',serif;
-      list-style: none;
-      display: inline-block;
-      padding: .2em 1em;
-      text-decoration: none; }
+/*# sourceMappingURL=grid.css.map */
 
 /*# sourceMappingURL=main.css.map */
