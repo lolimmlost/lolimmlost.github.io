@@ -1,5 +1,12 @@
-
-
-/*# sourceMappingURL=grid.css.map */
+header {
+  height: 100vh;
+  background-image: url(../img/bg.png);
+  background-position: no-repeat center center fixed;
+  background-size: cover;
+  margin-left: -10px;
+  margin-right: -10px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
