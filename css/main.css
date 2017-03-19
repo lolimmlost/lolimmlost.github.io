@@ -20,7 +20,7 @@ body {
     text-align: center;
     max-width: 970px; }
   body div.wrap {
-    margin: 0 auto 100px;
+    margin: 0 auto 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
@@ -33,5 +33,15 @@ body {
     height: 100%;
     width: 100%;
     min-width: 0px; }
+
+footer {
+  width: 100%;
+  margin: 0 auto 40px;
+  text-align: center;
+  float: left; }
+  footer a {
+    text-decoration: none; }
+  footer nav ul li {
+    list-style: none; }
 
 /*# sourceMappingURL=main.css.map */
