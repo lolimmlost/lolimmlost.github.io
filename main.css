@@ -71,6 +71,19 @@ body section {
   }
   .foot{
     width: 800px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:900px){
+    .logo p{
+    font-size: 45px;
+  }
+  .search{
+    width: 470px;
+  }
+  .foot{
+    width: 500px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width:411px){
