@@ -15,14 +15,19 @@ body{
 .main {
   font-size:30px;
   color:white;
+  letter-spacing:8px;
 }
-.main-inn{
-  
+span{
+  word-wrap:break-word;
+  white-space: normal;
+  background-color:white;
+  padding:5px 5px;
+  letter-spacing:3px;
+  line-height:35px;
 }
-.section p{
-  padding:0;
-  margin:0;
+#two{
+
 }
 .foot{
-  margin:40px 0;
+  margin:20px 0;
 }
