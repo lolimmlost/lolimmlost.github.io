@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing:border-box;
   font-family: 'Lato', sans-serif;
 }
@@ -7,17 +7,22 @@ body{
   text-align:center;
   justify-content:center;
   flex-direction:column;
+  flex-wrap:wrap;
   height:97vh;
   background: url("https://s-media-cache-ak0.pinimg.com/originals/18/1b/d8/181bd85c76aab48e8e9be182bfc1365a.gif");
   background-size:cover;
   background-position: 60% 50%;
+}
+a {
+  color:white;
+  text-decoration: none;
 }
 .main {
   font-size:30px;
   color:white;
   letter-spacing:8px;
 }
-span{
+span {
   word-wrap:break-word;
   white-space: normal;
   background-color:white;
@@ -25,13 +30,9 @@ span{
   letter-spacing:3px;
   line-height:35px;
 }
-#two{
-
-}
-.foot{
+.foot-wrap {
   margin:20px 0;
 }
-
     /* Custom, iPhone Retina */ 
     @media only screen and (min-width : 320px) {
       body{

@@ -8,30 +8,33 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="normal.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://w.soundcloud.com/player/api.js">
+    <script type="text/javascript" src="scripts/soundcloud.player.api.js"></script>
+    <script type="text/javascript">
+      soundcloud.addEventListener('onPlayerReady', function(player, data) {
+      player.api_play();
+      });
+    </script>
   </head>
   <body>
-  <div class="main">
-  <div class="main-inn">
-    <h1>TOPSHELF</h1>
-    <h2>MUSIC</h2>
-  </div>
+    <div class="main">
+      <div class="main-inn">
+        <h1>TOPSHELF</h1>
+        <h2>MUSIC</h2>
+      </div>
+    </div>
+    <div class="section-wrap">
+      <div class="section">
+        <span id="one">On The Rise | In Disguise<br></span>
+        <span id="two">Coming Soon</span>  
+      </div>
+    </div>
 
-  </div>
-<div class="section-wrap">
-  <div class="section">
-  <span id="one">On The Rise | In Disguise<br></span>
-  <!-- 
-  
-  !-->
-  <span id="two">Coming Soon</span>  
-  </div>
-</div>
+    <div class="foot-wrap">
+      <div class="foot">
+        <a href="index_2.html">Page 2</a>
+      </div>
+    </div>
 
-<div class="foot-wrap">
-  <div class="foot">
-
-  </div>
-</div>
-
-</body>
+  </body>
 </html>
