@@ -43,3 +43,11 @@ a {
 a :hover {
   color: var(--second-color);
 }
+@media only screen and (max-width: 820px) {
+    h1 {
+        font-size: 6rem;
+    }
+  p{
+    font-size:3rem;
+  }
+}
