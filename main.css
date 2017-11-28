@@ -1,75 +1,45 @@
-* {
-  box-sizing:border-box;
-  font-family: 'Lato', sans-serif;
+:root {
+  --main-color: #ed4936;
+  --second-color: #246592;
+  --light-grey: #dad4cb;
+  --dim-grey: #645c4a;
+  --rosy-brown: #9f927b;
 }
-body{
-  display:flex;
-  text-align:center;
-  justify-content:center;
-  flex-direction:column;
-  flex-wrap:wrap;
-  height:97vh;
-  background: url("https://s-media-cache-ak0.pinimg.com/originals/18/1b/d8/181bd85c76aab48e8e9be182bfc1365a.gif");
-  background-size:cover;
-  background-position: 60% 50%;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url("https://static.pexels.com/photos/2156/sky-earth-space-working.jpg")
+    no-repeat 50% 50% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1 {
+  font-family: "Mrs Sheppards";
+  font-size: 8.0rem;
+  text-shadow: 4px 4px white;
+  color: var(--main-color);
+}
+p {
+  font-family: "Montserrat";
+  font-size: 4.0rem;
+  color: white;
+  text-shadow: 5px 5px var(--main-color);
+  margin: 0;
 }
 a {
-  color:white;
   text-decoration: none;
 }
-.main {
-  font-size:30px;
-  color:white;
-  letter-spacing:8px;
+a :hover {
+  color: var(--second-color);
 }
-span {
-  word-wrap:break-word;
-  white-space: normal;
-  background-color:white;
-  padding:5px 5px;
-  letter-spacing:3px;
-  line-height:35px;
-}
-.foot-wrap {
-  margin:20px 0;
-}
-    /* Custom, iPhone Retina */ 
-    @media only screen and (min-width : 320px) {
-      body{
-        background-position: 50% 50%;
-      }
-      .main{
-        font-size:20px;
-      }
-    }
-
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (min-width : 480px) {
-      .main{
-        font-size:20px;
-      }
-    }
-
-    /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
-      .main{
-        font-size:30px;
-      }
-    }
-
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-      .main{
-        font-size:35px;
-      }
-    }
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-
-    }
-    @media only screen and (min-width : 280px) {
-      .main {
-        font-size:15px;
-      }
-    } 
