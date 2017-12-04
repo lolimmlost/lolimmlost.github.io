@@ -5,6 +5,7 @@
   --dim-grey: #645c4a;
   --rosy-brown: #9f927b;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -25,13 +26,13 @@ body {
 }
 h1 {
   font-family: "Mrs Sheppards";
-  font-size: 8.0rem;
+  font-size: 8rem;
   text-shadow: 4px 4px white;
   color: var(--main-color);
 }
 p {
   font-family: "Montserrat";
-  font-size: 4.0rem;
+  font-size: 4rem;
   color: white;
   text-shadow: 5px 5px var(--main-color);
   margin: 0;
@@ -44,42 +45,42 @@ a :hover {
 }
 
 @media all and (max-width: 1690px) {
-h1{
-    font-size:8rem;
+  h1 {
+    font-size: 8rem;
   }
-  p{
-    font-size:4rem;
+  p {
+    font-size: 4rem;
   }
-}}
+}
 @media all and (max-width: 1280px) {
-  h1{
-      font-size:8rem;
-    }
-    p{
-      font-size:4rem;
-    }
- }
+  h1 {
+    font-size: 8rem;
+  }
+  p {
+    font-size: 4rem;
+  }
+}
 @media all and (max-width: 980px) {
-  h1{
-      font-size:6.5rem;
-    }
-    p{
-      font-size:3.5rem;
-    }
+  h1 {
+    font-size: 6.5rem;
+  }
+  p {
+    font-size: 3.5rem;
+  }
 }
 @media all and (max-width: 736px) {
-  h1{
-    font-size:5.5rem;
+  h1 {
+    font-size: 4rem;
   }
-  p{
-    font-size:2.5rem;
+  p {
+    font-size: 2rem;
   }
 }
 @media all and (max-width: 480px) {
-  h1{
-    font-size: 4rem;
+  h1 {
+    font-size: 2.75rem;
   }
-  p{
-    font-size:2rem;
+  p {
+    font-size: 1.75rem;
   }
 }
