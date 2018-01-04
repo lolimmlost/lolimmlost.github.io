@@ -10,8 +10,7 @@
   box-sizing: border-box;
 }
 body {
-  background: url("https://static.pexels.com/photos/2156/sky-earth-space-working.jpg")
-    no-repeat 50% 50% fixed;
+  background: url("https://static.pexels.com/photos/2156/sky-earth-space-working.jpg") no-repeat 50% 50% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -39,11 +38,14 @@ p {
 }
 a {
   text-decoration: none;
+  -webkit-transition: color .5s;
+  transition: color .5s;
 }
 a :hover {
   color: var(--second-color);
 }
 
+<!--
 @media all and (max-width: 1690px) {
   h1 {
     font-size: 8rem;
@@ -70,18 +72,20 @@ a :hover {
 }
 @media all and (max-width: 736px) {
   h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   p {
-    font-size: 2rem;
+    font-size: 3rem;
+    text-shadow: 4px 4px var(--main-color);
   }
 }
 @media all and (max-width: 480px) {
   h1 {
-    font-size: 2.75rem;
+    font-size: 3.75rem;
   }
   p {
-    font-size: 1.75rem;
+    font-size: 2.50rem;
+    text-shadow: 4px 4px var(--main-color);
   }
 }
 @media all and (max-width: 320px) {
@@ -90,6 +94,30 @@ a :hover {
   }
   p {
     font-size: 1.5rem;
+    text-shadow: 3px 3px var(--main-color);
   }
 }
 
+
+/* Instagram */
+.fa-instagram {
+    background: var(--instagram-color);
+    color: white;
+
+}
+
+/* SoundCloud */
+.fa-soundcloud {
+    background: var(--soundcloud-color);
+    color: white;
+}
+/* Twitter */
+.fa-twitter {
+    background: var(--twitter-color);
+    color: white;
+}
+/* Twitch */
+.fa-twitch {
+    background: var(--twitch-color);
+    color: white;
+}

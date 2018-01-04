@@ -1,0 +1,22 @@
+:root {
+  --main-color: #3c94cc;
+  --second-color: #dca68e;
+  --black-color: #242421;
+  --grey-color: #988c76;
+  --dark-olive: #5e3630;
+  --instagram-color: #C32AA3;
+  --soundcloud-color: #FF5500;
+  --twitter-color: #00B6F1;
+  --twitch-color: #6441A4;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+	background-color: #D1DDE3;
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
