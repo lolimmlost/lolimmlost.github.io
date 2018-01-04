@@ -53,6 +53,9 @@ nav {
     height: 64px;
     align-items: center;
 }
+nav a {
+    text-decoration: none;
+}
 ul{
     max-width: 80%;
 }
