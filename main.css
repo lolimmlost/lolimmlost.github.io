@@ -97,27 +97,3 @@ a :hover {
     text-shadow: 3px 3px var(--main-color);
   }
 }
-
-
-/* Instagram */
-.fa-instagram {
-    background: var(--instagram-color);
-    color: white;
-
-}
-
-/* SoundCloud */
-.fa-soundcloud {
-    background: var(--soundcloud-color);
-    color: white;
-}
-/* Twitter */
-.fa-twitter {
-    background: var(--twitter-color);
-    color: white;
-}
-/* Twitch */
-.fa-twitch {
-    background: var(--twitch-color);
-    color: white;
-}
