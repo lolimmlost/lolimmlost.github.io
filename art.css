@@ -37,11 +37,14 @@ span {
     background-color: #6AB7CD;
     margin: 20px 20px;
     flex-grow: 2;
+    border: solid white 2px;
 }
 
 body {
-    background-color: #FAFBF4;
-    background: url(https://static.pexels.com/photos/2156/sky-earth-space-working.jpg) no-repeat 50% 50% fixed;
+    background-color: #ccc;
+    //background-color: #FAFBF4;
+    //background: url(https://static.pexels.com/photos/2156/sky-earth-space-working.jpg) no-repeat 50% 50% fixed;
+    background: url(https://static.pexels.com/photos/722218/pexels-photo-722218.jpeg) no-repeat 50% 50% fixed;
     background-size: cover;
     height: 100vh;
 
@@ -187,7 +190,7 @@ section h1 {
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: space-around;
-    max-width: 70%;
+    max-width: 75%;
     margin: 0 auto;
     margin-top:30px;
     margin-bottom: 30px;
@@ -322,6 +325,9 @@ section h1 {
         width: 72px;
         height: 72px;
         background-size: 64px;
+    }
+    .hero-showcase {
+        max-width: 90%;
     }
 }
 @media only screen and (max-width: 1280px){
