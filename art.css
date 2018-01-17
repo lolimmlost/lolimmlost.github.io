@@ -32,8 +32,8 @@ i.fa {
 }
 
 span {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background-color: #6AB7CD;
     margin: 20px 20px;
     flex-grow: 2;
