@@ -1,3 +1,11 @@
+:root {
+  --main-color: #ed4936;
+  --second-color: #246592;
+  --light-grey: #dad4cb;
+  --dim-grey: #645c4a;
+  --rosy-brown: #9f927b;
+}
+
 html,
 body,
 ul,
@@ -70,18 +78,18 @@ li {
     padding-bottom: 2px;
     font-size: 20px;
     color: black;
-    border-bottom: #2B2725 3px solid;
+    border-bottom: #2B2725 2px solid;
     transition: color ease 200ms;
 }
 
 li:hover {
     color: #E16832;
-    border-bottom: #2B2725 4px solid;
+    border-bottom: #2B2725 3px solid;
 }
 
 #current {
-    color: #6AB7CD;
-    border-bottom: #2B2725 4px solid;
+    color: var(--second-color);
+    border-bottom: #2B2725 3.5px solid;
 }
 
 section {
