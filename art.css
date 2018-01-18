@@ -188,59 +188,59 @@ section h1 {
 }
 .hero-showcase {
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: space-around;
+    //justify-content: space-around;
+    //align-content: space-around;
     max-width: 80vw;
     margin: 0 auto;
     margin-top:30px;
     margin-bottom: 30px;
 }
 .hero-box1{
-    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/1.jpg?raw=true ) center;
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/1.jpg?raw=true ) center center ;
     background-size: cover;
 }
 .hero-box2{
-    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/2.jpg?raw=true ) center;
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/2.jpg?raw=true ) center center;
     background-size: cover;
 }
 .hero-box3{
-    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/3.jpg?raw=true ) center ;
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/3.jpg?raw=true ) center center;
     background-size: cover;
 }
 .hero-box4{
-    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/4.jpg?raw=true ) center;
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/4.jpg?raw=true ) center center;
     background-size: cover;
 }
 .hero-box5{
-    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/5.jpg?raw=true ) center;
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/5.jpg?raw=true ) center center;
     background-size: cover;
 }
 .hero-box6{
-    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/6.jpg?raw=true ) center;
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/6.jpg?raw=true ) center center;
     background-size: cover;
 }
 .hero-box7{
-    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/7.jpg?raw=true ) center;
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/7.jpg?raw=true ) center center;
     background-size: cover;
 }
 .hero-box8{
-    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/8.jpg?raw=true ) center;
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/8.jpg?raw=true ) center center;
     background-size: cover;
 }
 .hero-box9{
-    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/9.jpg?raw=true ) center;
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/9.jpg?raw=true ) center center;
     background-size: cover;
 }
 .hero-box10{
-    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/10.jpg?raw=true ) center;
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/10.jpg?raw=true ) center center;
     background-size: cover;
 }
 .hero-box11{
-    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/11.jpg?raw=true ) center;
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/11.jpg?raw=true ) center center;
     background-size: cover;
 }
 .hero-box12{
-    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/12.jpg?raw=true ) center;
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/12.jpg?raw=true ) center center;
     background-size: cover;
 }
 
