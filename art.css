@@ -1,3 +1,10 @@
+/*********************
+ Art Page Css
+ ********************/
+
+ /*********************
+  Main Colors
+  ********************/
 :root {
   --main-color: #ed4936;
   --second-color: #246592;
@@ -23,41 +30,15 @@ ol {
     box-sizing: border-box;
 }
 
-i {
-    color: #2B2725;
-    transition: color ease 300ms;
-}
-
-i:hover {
-    color: #6AB7CD;
-}
-
-i.fa {
-    font-size: 64px;
-    line-height: 64px;
-    text-align: center;
-    margin: 25px 20px;
-}
-
-span {
-    width: 350px;
-    height: 300px;
-    background-color: #6AB7CD;
-    margin: 4px 4px;
-    flex-grow: 2;
-    //border: solid white 1px;
-}
-
 body {
     background-color: #ccc;
-    //background-color: #FAFBF4;
-    //background: url(https://static.pexels.com/photos/2156/sky-earth-space-working.jpg) no-repeat 50% 50% fixed;
     background: url(https://static.pexels.com/photos/722218/pexels-photo-722218.jpeg) no-repeat 50% 50% fixed;
     background-size: cover;
     height: 100vh;
-
 }
-
+/*********************
+ Navitagtion
+ ********************/
 nav {
     background-color: #FAFBF4;
     width: 100%;
@@ -91,7 +72,9 @@ li:hover {
     color: var(--second-color);
     border-bottom: #2B2725 3.5px solid;
 }
-
+/*********************
+ Section Colors
+ ********************/
 section {
     background-color: #E16832;
 }
@@ -100,11 +83,23 @@ section h1 {
     font-size: 48px;
     padding: 30px 40px;
 }
-
+/*********************
+  Main Art logo
+ ********************/
 .logo-container {
     height: 72px;
 }
-
+/*********************
+ Art Logo
+ ********************/
+span {
+     width: 350px;
+     height: 300px;
+     background-color: #6AB7CD;
+     margin: 4px 4px;
+     flex-grow: 2;
+     //border: solid white 1px;
+ }
 .slice-1 {
     background-color: blue;
     transform: rotateZ(-30deg);
@@ -129,6 +124,9 @@ section h1 {
     background-color: black;
     transform: rotateZ(300deg);
 }
+/*********************
+  Header
+ ********************/
 
 .header-bar {
     height: 172px;
@@ -153,6 +151,9 @@ section h1 {
     margin-left: 18px;
     margin-right: -20px;
 }
+/*********************
+ Assorted Blurs
+ ********************/
 
 .soft-blur {
     -webkit-box-shadow: 0px 4px 40px -8px black;
@@ -171,6 +172,9 @@ section h1 {
     -moz-box-shadow: 0px 0px 40px -8px black;
     box-shadow: 0px 0px 40px -8px black;
 }
+/*********************
+ Flex Options
+ ********************/
 
 .flex-container {
     display: flex;
@@ -191,6 +195,10 @@ section h1 {
 .flex-item-space {
     justify-content: space-around;
 }
+/*********************
+ Art Display
+ ********************/
+
 .hero-wrap{
 
 }
@@ -252,15 +260,9 @@ section h1 {
     background-size: cover;
 }
 
-
-.social-bar {
-    background-color: #FAFBF4;
-    margin-top: 1em;
-    box-sizing: border-box;
-    width: 100%;
-    overflow: hidden;
-    height: 110px;
-}
+/*********************
+  Buttons
+ ********************/
 
 .btn {
     -webkit-border-radius: 4;
@@ -281,6 +283,34 @@ section h1 {
     background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
+}
+
+/*********************
+ Social Bar
+ ********************/
+
+.social-bar {
+    background-color: #FAFBF4;
+    margin-top: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    height: 110px;
+}
+i {
+    color: #2B2725;
+    transition: color ease 300ms;
+}
+
+i:hover {
+    color: #6AB7CD;
+}
+
+i.fa {
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    margin: 25px 20px;
 }
 
 .snapcode-popup {
@@ -304,6 +334,10 @@ section h1 {
     display: block;
     animation: slide ease-in-out 500ms forwards;
 }
+
+/*********************
+ Keyframes and Media Queries
+ ********************/
 
 @keyframes slide {
     0% {
