@@ -1,7 +1,7 @@
 :root {
   --main-color: #3c94cc;
   /*--second-color: #dca68e;*/
-  --second-color:#E16832;
+  --second-color: #E16832;
   --black-color: #242421;
   --grey-color: #988c76;
   --dark-olive: #5e3630;
@@ -9,6 +9,7 @@
   --soundcloud-color: #FF5500;
   --twitter-color: #00B6F1;
   --twitch-color: #6441A4;
+  --nav-hover: #E16832;
 }
 
 * {
@@ -35,13 +36,10 @@ body {
 
 div {
   background-color: #626262;
-  -webkit-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
 }
 
 section {
-  padding: 0 40px;
+  padding: 20px 40px;
   border-bottom: 1px grey solid;
 }
 
@@ -57,8 +55,14 @@ nav a {
 .nav1 {
   max-width: 75%;
   background-color: #FAFBF4;
+  margin: 20px 0px;
+  line-height: 1em;
 }
-
+.section-blur{
+  -webkit-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
+}
 .nav-blur {
   -webkit-box-shadow: 0px 4px -20px -8px black;
   -moz-box-shadow: 0px 4px -20px -8px black;
@@ -69,8 +73,7 @@ nav a {
   justify-content: space-around;
 }
 
-ul {
-}
+ul {}
 
 li {
   text-decoration: none;
@@ -79,20 +82,20 @@ li {
   padding-bottom: 2px;
   font-size: 20px;
   color: black;
-
   transition: all ease 200ms;
 }
 
 li:hover {
-  color: #E16832;
+  color: var(--nav-hover);
   border-bottom: #2B2725 3px solid;
 }
+
 li:hover > #current {
   border-bottom: none;
 }
 
 #current {
-  color: var(--primary-color);
+  color: var(--nav-hover);
   border-bottom: #2B2725 3px solid;
 }
 
@@ -114,12 +117,16 @@ p {
   font-size: 18px;*/
   color: white;
 }
-.hero-width{
+.hero {
+}
+.hero-width {
   width: 75%;
 }
-.flex-column{
+
+.flex-column {
   flex-direction: column;
 }
+
 .contact {
   flex-direction: column;
 }
@@ -133,12 +140,13 @@ p {
 }
 
 .social-bar {
-  background-color: #FAFBF4;
+  background-color: none;
+  background: none;
   margin-top: 1em;
-  box-sizing: border-box;
   width: 100%;
   height: 110px;
-  border-radius: none;
+
+
 }
 
 .snapcode-popup {
