@@ -1,6 +1,7 @@
 :root {
   --main-color: #3c94cc;
-  --second-color: #dca68e;
+  /*--second-color: #dca68e;*/
+  --second-color:#E16832;
   --black-color: #242421;
   --grey-color: #988c76;
   --dark-olive: #5e3630;
@@ -23,20 +24,16 @@
 }
 
 body {
-  background-image: url("https://static.pexels.com/photos/113338/pexels-photo-113338.jpeg");
+  background-image: url("assets/about-bg.jpeg");
   background-size: cover;
   background-position: center center;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 div {
-  width: 90%;
-  margin: 0 auto;
   background-color: #626262;
   -webkit-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
@@ -44,13 +41,11 @@ div {
 }
 
 section {
-  padding: 0px 30px;
+  padding: 0 40px;
   border-bottom: 1px grey solid;
 }
 
 nav {
-  width: 100%;
-  height: 64px;
   align-items: center;
   margin: 0 auto;
 }
@@ -60,8 +55,7 @@ nav a {
 }
 
 .nav1 {
-  margin: 20px auto;
-  margin-bottom: 20px;
+  max-width: 75%;
   background-color: #FAFBF4;
 }
 
@@ -76,28 +70,30 @@ nav a {
 }
 
 ul {
-  max-width: 100%;
 }
 
 li {
   text-decoration: none;
   list-style: none;
-  margin: 0px 10px;
+  margin: 0px 12px;
   padding-bottom: 2px;
   font-size: 20px;
   color: black;
-  border-bottom: #2B2725 2px solid;
-  transition: color ease 200ms;
+
+  transition: all ease 200ms;
 }
 
 li:hover {
   color: #E16832;
   border-bottom: #2B2725 3px solid;
 }
+li:hover > #current {
+  border-bottom: none;
+}
 
 #current {
-  color: var(--second-color);
-  border-bottom: #2B2725 3.5px solid;
+  color: var(--primary-color);
+  border-bottom: #2B2725 3px solid;
 }
 
 #final-section {
@@ -114,11 +110,16 @@ h2 {
 }
 
 p {
-  line-height: 24px;
-  font-size: 18px;
+  /*line-height: 24px;
+  font-size: 18px;*/
   color: white;
 }
-
+.hero-width{
+  width: 75%;
+}
+.flex-column{
+  flex-direction: column;
+}
 .contact {
   flex-direction: column;
 }
@@ -133,7 +134,7 @@ p {
 
 .social-bar {
   background-color: #FAFBF4;
-  margin-top: 10px;
+  margin-top: 1em;
   box-sizing: border-box;
   width: 100%;
   height: 110px;
@@ -164,7 +165,7 @@ p {
 }
 
 .rounded-border {
-  border-radius: 10px;
+  border-radius: .5em;
 }
 
 i {
@@ -219,9 +220,6 @@ i.fa {
     width: 72px;
     height: 72px;
     background-size: 64px;
-  }
-  .hero-showcase {
-    max-width: 90%;
   }
 }
 
