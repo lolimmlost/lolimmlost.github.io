@@ -1,0 +1,381 @@
+/*********************
+ Art Page Css
+ ********************/
+
+ /*********************
+  Main Colors
+  ********************/
+:root {
+  --main-color: #ed4936;
+  --second-color: #246592;
+  --light-grey: #dad4cb;
+  --dim-grey: #645c4a;
+  --rosy-brown: #9f927b;
+}
+
+html,
+body,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    font: 100% Open Sans, sans-serif;
+}
+
+*,
+::before,
+::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    background: url(https://static.pexels.com/photos/722218/pexels-photo-722218.jpeg) no-repeat 50% 50% fixed;
+    background-size: cover;
+    height: 100vh;
+}
+/*********************
+ Navitagtion
+ ********************/
+nav {
+    background-color: #FAFBF4;
+    width: 100%;
+    height: 64px;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+}
+ul{
+    max-width: 80%;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0px 20px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    color: black;
+    border-bottom: #2B2725 2px solid;
+    transition: color ease 200ms;
+}
+
+li:hover {
+    color: #E16832;
+    border-bottom: #2B2725 3px solid;
+}
+
+#current {
+    color: var(--second-color);
+    border-bottom: #2B2725 3.5px solid;
+}
+/*********************
+ Section Colors
+ ********************/
+section {
+    background-color: #E16832;
+}
+
+section h1 {
+    font-size: 48px;
+    padding: 30px 40px;
+}
+/*********************
+  Main Art logo
+ ********************/
+.logo-container {
+    height: 72px;
+}
+/*********************
+ Art Logo
+ ********************/
+span {
+     width: 350px;
+     height: 300px;
+     background-color: #6AB7CD;
+     margin: 4px 4px;
+     flex-grow: 2;
+     //border: solid white 1px;
+ }
+.slice-1 {
+    background-color: blue;
+    transform: rotateZ(-30deg);
+}
+
+.slice-2 {
+    background-color: green;
+    transform: rotateZ(-15deg);
+}
+
+.slice-3 {
+    background-color: yellow;
+    transform: rotateZ(0deg);
+}
+
+.slice-4 {
+    background-color: red;
+    transform: rotateZ(15deg);
+}
+
+.slice-5 {
+    background-color: black;
+    transform: rotateZ(300deg);
+}
+/*********************
+  Header
+ ********************/
+
+.header-bar {
+    height: 172px;
+}
+
+.header-bar h1 {
+    font-family: 'Slabo 27px', sans-serif;
+    margin: 0;
+    margin-top: -15px;
+    padding: 0;
+}
+
+.header-bar .slice {
+    margin-left: 12px;
+    width: 10px;
+    height: 70px;
+}
+
+.header-bar .logo-container {
+    width: 150px;
+    margin: 20px auto;
+    margin-left: 18px;
+    margin-right: -20px;
+}
+/*********************
+ Assorted Blurs
+ ********************/
+
+.soft-blur {
+    -webkit-box-shadow: 0px 4px 40px -8px black;
+    -moz-box-shadow: 0px 4px 40px -8px black;
+    box-shadow: 0px 4px 40px -8px black;
+}
+
+.nav-blur {
+    -webkit-box-shadow: 0px 4px -20px -8px black;
+    -moz-box-shadow: 0px 4px -20px -8px black;
+    box-shadow: 0px 4px -20px -8px black;
+}
+
+.hero-box-blur {
+    -webkit-box-shadow: 0px 0px 40px -8px black;
+    -moz-box-shadow: 0px 0px 40px -8px black;
+    box-shadow: 0px 0px 40px -8px black;
+}
+/*********************
+ Flex Options
+ ********************/
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child-baseline {
+    align-items: baseline;
+}
+
+.flex-Hcenter {
+    justify-content: center;
+}
+
+.flex-Vcenter {
+    align-items: center;
+}
+
+.flex-item-space {
+    justify-content: space-around;
+}
+/*********************
+ Art Display
+ ********************/
+
+.hero-wrap{
+
+}
+.hero-showcase {
+    flex-flow: row wrap;
+    //justify-content: space-around;
+    //align-content: space-around;
+    max-width: 80vw;
+    margin: 0 auto;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.hero-box1{
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/1.jpg?raw=true ) center center ;
+    background-size: cover;
+}
+.hero-box2{
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/2.jpg?raw=true ) center center;
+    background-size: cover;
+}
+.hero-box3{
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/3.jpg?raw=true ) center center;
+    background-size: cover;
+}
+.hero-box4{
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/4.jpg?raw=true ) center center;
+    background-size: cover;
+}
+.hero-box5{
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/5.jpg?raw=true ) center center;
+    background-size: cover;
+}
+.hero-box6{
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/6.jpg?raw=true ) center center;
+    background-size: cover;
+}
+.hero-box7{
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/7.jpg?raw=true ) center center;
+    background-size: cover;
+}
+.hero-box8{
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/8.jpg?raw=true ) center center;
+    background-size: cover;
+}
+.hero-box9{
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/9.jpg?raw=true ) center center;
+    background-size: cover;
+}
+.hero-box10{
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/10.jpg?raw=true ) center center;
+    background-size: cover;
+}
+.hero-box11{
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/11.jpg?raw=true ) center center;
+    background-size: cover;
+}
+.hero-box12{
+    background: url( https://github.com/lolimmlost/lolimmlost.github.io/blob/master/assets/artDisplay/12.jpg?raw=true ) center center;
+    background-size: cover;
+}
+
+/*********************
+  Buttons
+ ********************/
+
+.btn {
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    background: #3498db;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+/*********************
+ Social Bar
+ ********************/
+
+.social-bar {
+    background-color: #FAFBF4;
+    margin-top: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    height: 110px;
+}
+i {
+    color: #2B2725;
+    transition: color ease 300ms;
+}
+
+i:hover {
+    color: #6AB7CD;
+}
+
+i.fa {
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    margin: 25px 20px;
+}
+
+.snapcode-popup {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 150px;
+    height: 150px;
+    background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/snapcode.png?raw=true) no-repeat center center;
+    background-size: 128px;
+    background-color: #FAFBF4;
+    border-radius: 10px;
+    margin-top: -180px;
+    margin-left: 300px;
+    display: none;
+    position: absolute;
+}
+
+.snap-container:hover > .snapcode-popup {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    display: block;
+    animation: slide ease-in-out 500ms forwards;
+}
+
+/*********************
+ Keyframes and Media Queries
+ ********************/
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        transform: translateX(-400px);
+    }
+    100% {
+        transform: translateX(-350px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    i.fa {
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        margin: 20px 15px;
+    }
+    .social-bar {
+        height: 80px;
+    }
+    .snapcode-popup {
+        margin-top: -95px;
+        margin-left: 330px;
+        width: 72px;
+        height: 72px;
+        background-size: 64px;
+    }
+    .hero-showcase {
+        max-width: 90%;
+    }
+}
+@media only screen and (max-width: 1280px){
+    .social-bar{
+        height: 100px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
