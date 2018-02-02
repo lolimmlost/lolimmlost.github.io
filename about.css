@@ -42,9 +42,10 @@ div {
 
 section {
   padding: 0 40px;
+}
+.section-border{
   border-bottom: 1px grey solid;
 }
-
 nav {
   align-items: center;
   margin: 0 auto;
@@ -55,8 +56,9 @@ nav a {
 }
 
 .nav1 {
-  max-width: 75%;
+  width: 75%;
   background-color: #FAFBF4;
+  margin: 20px 20px;
 }
 
 .nav-blur {
@@ -75,12 +77,12 @@ ul {
 li {
   text-decoration: none;
   list-style: none;
-  margin: 0px 12px;
+  margin: 0px 10px;
   padding-bottom: 2px;
   font-size: 20px;
   color: black;
-
   transition: all ease 200ms;
+  padding-left: -10px;
 }
 
 li:hover {
@@ -97,21 +99,25 @@ li:hover > #current {
 }
 
 #final-section {
-  border: none;
+  border-bottom: none;
 }
 
 h1 {
   color: lightblue;
-  font-family: 'Poppins', Sans-Serif;
+  font-family: 'Montaga', sans-serif;
+  font-weight: lighter;
+  letter-spacing: .2em;
+  font-size: 2em;
 }
 
 h2 {
   color: white;
+  font-family: 'Yeseva One', sans-serif;
 }
 
 p {
-  /*line-height: 24px;
-  font-size: 18px;*/
+  font-family:
+  font-size: 1.25em;
   color: white;
 }
 .hero-width{
@@ -212,7 +218,7 @@ i.fa {
     margin: 20px 15px;
   }
   .social-bar {
-    height: 80px;
+    height: 100px;
   }
   .snapcode-popup {
     margin-top: -60px;
@@ -221,11 +227,29 @@ i.fa {
     height: 72px;
     background-size: 64px;
   }
+  .nav1{
+    width: 98%;
+  }
+  .hero-width{
+    width: 98%;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+  p{
+    font-size: 1em;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
   .social-bar {
     height: 110px;
     max-height: 100%;
+  }
+  .hero-width{
+    width: 90%;
+  }
+  .nav1{
+    width: 90%;
   }
 }
