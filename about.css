@@ -1,7 +1,6 @@
 :root {
   --main-color: #3c94cc;
-  /*--second-color: #dca68e;*/
-  --second-color:#E16832;
+  --second-color: #246592;
   --black-color: #242421;
   --grey-color: #988c76;
   --dark-olive: #5e3630;
@@ -34,24 +33,17 @@ body {
 }
 
 div {
-<<<<<<< HEAD
   background-color: black;
 }
 
 section {
   padding: 30px 60px;
-=======
-  background-color: #626262;
-  -webkit-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
 }
 
 section {
-  padding: 0 40px;
+  padding: 0 80px 30px 60px;
 }
 .section-border{
->>>>>>> origin/master
   border-bottom: 1px grey solid;
 }
 nav {
@@ -64,7 +56,6 @@ nav a {
 }
 
 .nav1 {
-<<<<<<< HEAD
   max-width: 100%;
   background-color: #FAFBF4;
   margin: 20px 0px;
@@ -75,11 +66,9 @@ nav a {
   -webkit-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
-=======
   width: 75%;
   background-color: #FAFBF4;
   margin: 20px 20px;
->>>>>>> origin/master
 }
 
 .nav-blur {
@@ -93,12 +82,6 @@ ul {
   margin: 0;
 }
 
-<<<<<<< HEAD
-=======
-ul {
-}
-
->>>>>>> origin/master
 li {
   text-decoration: none;
   list-style: none;
@@ -119,7 +102,7 @@ li:hover > #current {
 }
 
 #current {
-  color: var(--primary-color);
+  color: var(--second-color);
   border-bottom: #2B2725 3px solid;
 }
 
@@ -128,45 +111,34 @@ li:hover > #current {
 }
 
 h1 {
-<<<<<<< HEAD
   color: white;
   font-family: 'Poppins', Sans-Serif;
-  padding: 0px 0px 16px 0px;
+  padding: 20px 0px 16px 0px;
   margin: 0;
-=======
   color: lightblue;
-  font-family: 'Montaga', sans-serif;
   font-weight: lighter;
   letter-spacing: .2em;
   font-size: 2em;
->>>>>>> origin/master
 }
 
 h2 {
   color: white;
-<<<<<<< HEAD
   padding: 0;
   margin: 0;
-=======
   font-family: 'Yeseva One', sans-serif;
->>>>>>> origin/master
 }
 
 p {
-  font-family:
+  font-family:;
   font-size: 1.25em;
   color: white;
-  padding: 0px 60px;
+  padding: 0px 0px;
   margin: 0;
 }
-<<<<<<< HEAD
 
 .hero {}
 
 .hero-width {
-=======
-.hero-width{
->>>>>>> origin/master
   width: 75%;
 }
 .flex-column{
@@ -181,15 +153,12 @@ p {
 }
 
 .social-bar {
-  background-color: #FAFBF4;
+  background: none;
   margin-top: 1em;
   box-sizing: border-box;
   width: 100%;
   height: 110px;
-<<<<<<< HEAD
-=======
   border-radius: none;
->>>>>>> origin/master
 }
 
 .snapcode-popup {
@@ -430,77 +399,3 @@ i.fa {
     padding: 0;
   }
 }
-
-
-/*@media only screen and (max-width: 767px) {
-  i.fa {
-    font-size: 48px;
-    line-height: 48px;
-    text-align: center;
-    margin: 20px 15px;
-  }
-  .social-bar {
-    height: 100px;
-  }
-  .snapcode-popup {
-    margin-top: -60px;
-    margin-left: 330px;
-    width: 72px;
-    height: 72px;
-    background-size: 64px;
-  }
-  .nav1{
-    width: 98%;
-  }
-  .hero-width{
-    width: 98%;
-  }
-  h1{
-    font-size: 1.5em;
-  }
-  p{
-    font-size: 1em;
-  }
-}
-<<<<<<< HEAD
-*/
-=======
-
-@media only screen and (max-width: 1280px) {
-  .social-bar {
-    height: 110px;
-    max-height: 100%;
-  }
-  .hero-width{
-    width: 90%;
-  }
-  .nav1{
-    width: 90%;
-  }
-}
-@media only screen
-    and (min-device-width : 375px) // or 213.4375em
-    and (max-device-width : 667px) // or 41.6875em
-    and (width : 375px) // or 23.4375em
-    and (height : 559px) // or 34.9375em
-    and (orientation : portrait)
-    and (color : 8)
-    and (device-aspect-ratio : 375/667)
-    and (aspect-ratio : 375/559)
-    and (device-pixel-ratio : 2)
-    and (-webkit-min-device-pixel-ratio : 2)
-{
-  body{
-    max-width: 100%;
-  }
-  .hero-width{
-    width: 98%;
-  }
-  .nav1{
-    width: 98%;
-  }
-  .social-bar{
-    width: 100%;
-  }
-}
->>>>>>> origin/master
