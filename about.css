@@ -30,18 +30,17 @@ body {
   -o-background-size: cover;
   -webkit-background-size: cover;
   height: 100vh;
+  margin: 0 auto;
 }
 
 div {
+  margin: 0 auto;
   background-color: black;
 }
 
 section {
-  padding: 30px 60px;
-}
-
-section {
-  padding: 0 80px 30px 60px;
+  height: 100%;
+  padding: 30px 80px 30px 60px;
 }
 .section-border{
   border-bottom: 1px grey solid;
@@ -58,7 +57,7 @@ nav a {
 .nav1 {
   max-width: 100%;
   background-color: #FAFBF4;
-  margin: 20px 0px;
+  margin: 15px auto;
   line-height: 1em;
 }
 
