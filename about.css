@@ -80,6 +80,7 @@ nav a {
 ul {
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 li {
@@ -129,8 +130,7 @@ h2 {
 }
 
 p {
-  font-family:;
-  font-size: 1.25em;
+  font-size: 1em;
   color: white;
   padding: 0px 0px;
   margin: 0;
@@ -139,7 +139,7 @@ p {
 .hero {}
 
 .hero-width {
-  width: 75%;
+  width: 90%;
 }
 .flex-column{
   flex-direction: column;
@@ -223,7 +223,42 @@ i.fa {
     transform: translateX(-350px);
   }
 }
-
+@media only screen and (min-width: 240px) and (max-width: 319px) {
+  .hero-width{
+    width:95%;
+  }
+  ul{
+    padding: 10px 10px 10px 10px;
+    margin:0;
+  }
+  li{
+    font-size: 12px;
+  }
+  h1{
+    font-size: 1.25em;
+  }
+  p{
+    font-size: 1em;
+    padding: 10px;
+  }
+  .social-bar{
+    width: 100%;
+  }
+  i.fa{
+    padding: 0;
+    margin: 10px;
+    font-size: 2.25em;
+    line-height: 1em;
+  }
+  .snapcode{
+  }
+  .snapcode-popup{
+    background-size: 64px;
+    width: 74px;
+    height: 74px;
+    margin: -70px 330px 0px;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .hero-width {
     width: 90%;
