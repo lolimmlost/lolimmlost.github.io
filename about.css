@@ -347,7 +347,47 @@ i.fa {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1999px) {
-  ...
+  .hero-width {
+    width: 90%;
+  }
+  .nav1 {
+    padding: 0;
+  }
+  ul {
+    padding: 10px 10px;
+  }
+  li {
+    padding: 10px 5px;
+    margin: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  p {
+    padding: 10px 0;
+    font-size: 1em;
+  }
+  i.fa {
+    font-size: 3.5em;
+    line-height: 2em;
+    padding: 10px 15px;
+    margin: 0;
+  }
+  .social-bar {
+    width: 80%;
+  }
+  .snapcode-popup {
+    background-size: 72px;
+    width: 78px;
+    height: 78px;
+    margin: -100px 340px 0px;
+    padding: 0;
+  }
 }
 
 
