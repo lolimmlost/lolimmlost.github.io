@@ -35,11 +35,11 @@ body {
 }
 
 div {
-  background-color: #626262;
+  background-color: black;
 }
 
 section {
-  padding: 20px 40px;
+  padding: 30px 60px;
   border-bottom: 1px grey solid;
 }
 
@@ -53,27 +53,28 @@ nav a {
 }
 
 .nav1 {
-  max-width: 75%;
+  max-width: 100%;
   background-color: #FAFBF4;
   margin: 20px 0px;
   line-height: 1em;
 }
-.section-blur{
+
+.section-blur {
   -webkit-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
 }
+
 .nav-blur {
   -webkit-box-shadow: 0px 4px -20px -8px black;
   -moz-box-shadow: 0px 4px -20px -8px black;
   box-shadow: 0px 4px -20px -8px black;
 }
 
-.flex-item-space {
-  justify-content: space-around;
+ul {
+  padding: 0;
+  margin: 0;
 }
-
-ul {}
 
 li {
   text-decoration: none;
@@ -104,21 +105,28 @@ li:hover > #current {
 }
 
 h1 {
-  color: lightblue;
+  color: white;
   font-family: 'Poppins', Sans-Serif;
+  padding: 0px 0px 16px 0px;
+  margin: 0;
 }
 
 h2 {
   color: white;
+  padding: 0;
+  margin: 0;
 }
 
 p {
   /*line-height: 24px;
   font-size: 18px;*/
   color: white;
+  padding: 0px 60px;
+  margin: 0;
 }
-.hero {
-}
+
+.hero {}
+
 .hero-width {
   width: 75%;
 }
@@ -135,18 +143,12 @@ p {
   display: flex;
 }
 
-.contact h1 {
-  color: var(--primary-color);
-}
-
 .social-bar {
   background-color: none;
   background: none;
   margin-top: 1em;
   width: 100%;
   height: 110px;
-
-
 }
 
 .snapcode-popup {
@@ -177,7 +179,7 @@ p {
 }
 
 i {
-  color: #2B2725;
+  color: white;
   transition: color ease 300ms;
 }
 
@@ -212,7 +214,144 @@ i.fa {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .hero-width {
+    width: 90%;
+  }
+  .nav1 {
+    padding: 0;
+  }
+  ul {
+    padding: 10px 10px;
+  }
+  li {
+    padding: 0;
+    margin: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  p {
+    padding: 10px 0;
+    font-size: 1em;
+  }
+  i.fa {
+    font-size: 2.125em;
+    line-height: 2.125em;
+    padding: 10px 15px;
+    margin: 0;
+  }
+  .social-bar {
+    width: 70%;
+  }
+  .snapcode-popup {
+    background-size: 72px;
+    width: 78px;
+    height: 78px;
+    margin: -80px 330px 0px;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .hero-width {
+    width: 90%;
+  }
+  .nav1 {
+    padding: 0;
+  }
+  ul {
+    padding: 10px 10px;
+  }
+  li {
+    padding: 0;
+    margin: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  p {
+    padding: 10px 0;
+    font-size: 1em;
+  }
+  i.fa {
+    font-size: 2.5em;
+    line-height: 2em;
+    padding: 10px 15px;
+    margin: 0;
+  }
+  .social-bar {
+    width: 80%;
+  }
+  .snapcode-popup {
+    background-size: 72px;
+    width: 78px;
+    height: 78px;
+    margin: -80px 330px 0px;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-width {
+    width: 90%;
+  }
+  .nav1 {
+    padding: 0;
+  }
+  ul {
+    padding: 10px 10px;
+  }
+  li {
+    padding: 10px 5px;
+    margin: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  p {
+    padding: 10px 0;
+    font-size: 1em;
+  }
+  i.fa {
+    font-size: 3.5em;
+    line-height: 2em;
+    padding: 10px 15px;
+    margin: 0;
+  }
+  .social-bar {
+    width: 80%;
+  }
+  .snapcode-popup {
+    background-size: 72px;
+    width: 78px;
+    height: 78px;
+    margin: -100px 340px 0px;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px) {
+  ...
+}
+
+
+/*@media only screen and (max-width: 767px) {
   i.fa {
     font-size: 48px;
     line-height: 48px;
@@ -230,10 +369,4 @@ i.fa {
     background-size: 64px;
   }
 }
-
-@media only screen and (max-width: 1280px) {
-  .social-bar {
-    height: 110px;
-    max-height: 100%;
-  }
-}
+*/
