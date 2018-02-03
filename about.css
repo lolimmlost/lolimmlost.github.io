@@ -80,13 +80,13 @@ li {
   margin: 0px 10px;
   padding-bottom: 2px;
   font-size: 20px;
-  color: black;
+  color: #E16832;
   transition: all ease 200ms;
   padding-left: -10px;
 }
 
 li:hover {
-  color: #E16832;
+  color: black;
   border-bottom: #2B2725 3px solid;
 }
 li:hover > #current {
