@@ -18,7 +18,6 @@ body {
   height: 100vh;
   display: flex;
   margin: 0 auto;
-  max-width: 1000px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -70,30 +69,30 @@ a :hover {
     font-size: 3.5rem;
   }
 }
-@media all and (max-width: 736px) {
+@media only screen and (min-width: 768px) and (max-width: 991px){}
   h1 {
-    font-size: 4.5rem;
+    font-size: 148px;
   }
   p {
-    font-size: 3rem;
+    font-size: 64px;
     text-shadow: 4px 4px var(--main-color);
   }
 }
-@media all and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px){
   h1 {
-    font-size: 3.75rem;
+    font-size: 84px;
   }
   p {
-    font-size: 2.50rem;
+    font-size: 48px;
     text-shadow: 4px 4px var(--main-color);
   }
 }
-@media all and (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 479px){
   h1 {
-    font-size: 2.75rem;
+    font-size: 72px;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 36px;
     text-shadow: 3px 3px var(--main-color);
   }
 }
