@@ -27,6 +27,8 @@ h1 {
   font-size: 8rem;
   text-shadow: 4px 4px white;
   color: var(--main-color);
+  padding: 0;
+  margin: 0;
 }
 p {
   font-family: "Montserrat";
@@ -44,7 +46,6 @@ a :hover {
   color: var(--second-color);
 }
 
-<!--
 @media all and (max-width: 1690px) {
   h1 {
     font-size: 8rem;
