@@ -9,6 +9,7 @@
   --soundcloud-color: #FF5500;
   --twitter-color: #00B6F1;
   --twitch-color: #6441A4;
+  --off-white:#FAFBF4;
 }
 *,
 ::before,
@@ -30,7 +31,7 @@ body {
   margin: 0 auto;
 }
 div {
-  background-color: #626262;
+  background-color:var(--off-white);
 }
 
 section {
@@ -51,8 +52,9 @@ nav a {
 }
 
 .nav1 {
-  background-color: #FAFBF4;
+  background-color: var(--off-white);
   margin: 20px auto;
+  height: 80px;
 }
 .nav-blur {
   -webkit-box-shadow: 0px 4px -20px -8px black;
@@ -63,10 +65,10 @@ ul {
   margin-left: -40px;
 }
 li {
+  font-family: 'Droid Serif', Georgia, Times, serif;
   text-decoration: none;
   list-style: none;
   padding: 0px 8px;
-  padding-bottom: 2px;
   font-size: 24px;
   color: #E16832;
   transition: all ease 200ms;
@@ -83,24 +85,23 @@ i {
   transition: color ease 300ms;
 }
 i:hover {
-  color: #6AB7CD;
+  color: var(--grey-color);
 }
 h1 {
-  color: var(--main-color);
-  font-family: 'Slabo 24px', sans-serif;
-  font-weight: lighter;
-  letter-spacing: .2em;
-  font-size: 2em;
+  color: black;
+  font-family: 'Molengo', Georgia, Times, serif;
+  font-size: 32px;
   padding: 20px 0 0 0;
   margin: 0;
 }
 h2 {
   color: white;
-  font-family: 'Yeseva One', sans-serif;
+  font-family: 'Molengo', Georgia, Times, serif;
 }
 p {
-  font-family:'Slabo  24px', sans-serif;
-  font-size: 24px;
+  font-family: 'Lekton', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
   color: black;
   padding: 5px 20px 5px 20px;
   margin: 0;
