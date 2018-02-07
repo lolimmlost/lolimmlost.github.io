@@ -20,7 +20,7 @@
 }
 
 body {
-  background-image: url("assets/about-bg.jpeg");
+  background-image: url("img/bg.jpg");
   background-size: cover;
   background-position: center center;
   -moz-background-size: cover;
@@ -29,6 +29,16 @@ body {
   height: 100vh;
   width: 100%;
   margin: 0 auto;
+}
+a p{
+  font-family: "Montserrat";
+  font-size: 4rem;
+  color: white;
+  text-shadow: 5px 5px var(--main-color);
+  margin: 30px 0 30px 0;
+}
+a{
+  text-decoration: none;
 }
 div {
   background-color:var(--off-white);
@@ -104,6 +114,17 @@ p {
   line-height: 30px;
   color: black;
   padding: 5px 20px 5px 20px;
+  margin: 0;
+}
+.landing-page{
+  text-align: center;
+}
+.landing-page h1{
+  font-family: "Mrs Sheppards";
+  font-size: 8rem;
+  text-shadow: 4px 4px white;
+  color: var(--main-color);
+  padding: 0;
   margin: 0;
 }
 .centered{
@@ -204,6 +225,9 @@ i.fa {
   section{
     padding-left: 20px;
     padding-right:20px;
+  }
+  .landing-page h1{
+    font-size: 7rem;
   }
   li{
     font-size: 16px;
