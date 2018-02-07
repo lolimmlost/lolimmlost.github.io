@@ -1,6 +1,7 @@
 :root {
   --main-color: #3c94cc;
   --red-color: #dca68e;
+  --black-color: #22201c;
   --second-color:#E16832;
   --black-color: #242421;
   --grey-color: #988c76;
@@ -98,7 +99,7 @@ i:hover {
   color: var(--grey-color);
 }
 h1 {
-  color: black;
+  color: var(--black-color);
   font-family: 'Molengo', Georgia, Times, serif;
   font-size: 32px;
   padding: 20px 0 0 0;
@@ -112,7 +113,7 @@ p {
   font-family: 'Lekton', Helvetica, Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
-  color: black;
+  color: var(--black-color);
   padding: 5px 20px 5px 20px;
   margin: 0;
 }
