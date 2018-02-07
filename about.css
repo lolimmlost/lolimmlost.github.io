@@ -121,8 +121,8 @@ p {
 }
 .landing-page h1{
   font-family: "Mrs Sheppards";
-  font-size: 8rem;
   text-shadow: 4px 4px white;
+  font-size: 8rem;
   color: var(--main-color);
   padding: 0;
   margin: 0;
@@ -227,7 +227,7 @@ i.fa {
     padding-right:20px;
   }
   .landing-page h1{
-    font-size: 7rem;
+    font-size: 5.5rem;
   }
   li{
     font-size: 16px;
