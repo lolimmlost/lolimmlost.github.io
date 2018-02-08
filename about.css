@@ -215,6 +215,11 @@ i.fa {
 .flex-Vcenter {
   align-items: center;
 }
+.copy{
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
 @keyframes slide {
   0% {
     opacity: 0;
