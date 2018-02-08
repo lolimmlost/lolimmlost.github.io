@@ -42,9 +42,13 @@ div {
 section {
   padding: 0 40px;
   padding-bottom: 20px;
+  margin: 0 auto;
 }
 .section-border{
   border-bottom: 1px grey solid;
+}
+.section-width{
+  width: 60%;
 }
 
 nav {
@@ -105,7 +109,7 @@ h2 {
 }
 p {
   font-family: 'Lekton', Helvetica, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 30px;
   color: var(--black-color);
   padding: 5px 20px 5px 20px;
@@ -226,7 +230,7 @@ i.fa {
   a p{
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   p{
     padding: 0;
@@ -235,6 +239,9 @@ i.fa {
     width: 100%;
     height: 70px;
     background: none;
+  }
+  .section-width{
+    width:98%;
   }
   i.fa{
     font-size: 38px;
@@ -261,6 +268,9 @@ i.fa {
   }
   .landing-page {
   }
+  .section-width{
+    width: 100%;
+  }
   li{
     font-size: 16px;
   }
@@ -268,7 +278,10 @@ i.fa {
     width: 90%;
   }
   h1{
-    font-size: 24px;
+    font-size: 1.5em;
+  }
+  p{
+    line-height: 1.5em;
   }
   a p{
     margin-top: 30px;
@@ -298,6 +311,9 @@ i.fa {
   margin: 20px 15px;
   color: white;
 }
+.section-width{
+  width: 80%;
+}
   .social-bar {
   height: 100px;
 }
@@ -317,15 +333,20 @@ i.fa {
   font-size: 1.5em;
 }
   p{
-  font-size: 1em;
+  font-size: 1.4em;
 }
 }
-/*
-@media only screen and (min-width: 768px) and (max-width: 991px){ ... }
-*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+.section-width{
+  width: 70%;
+}
+ }
+
 @media only screen and (min-width: 992px) and (max-width: 1999px){
   .landing-page h1{
     font-size: 8rem;
     padding-top: 30px;
   }
+
 }
