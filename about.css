@@ -264,7 +264,7 @@ i.fa {
   }
   .landing-page h1{
     font-size: 5rem;
-    padding-top: 30px;
+    padding-top: 50px;
   }
   .landing-page {
   }
@@ -335,18 +335,31 @@ i.fa {
   p{
   font-size: 1.4em;
 }
+.landing-page h1{
+  padding-top: 60px;
+}
+.landing-page a p{
+  margin-bottom: 70px;
+}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
 .section-width{
   width: 70%;
 }
+.landing-page a p{
+  margin-bottom: 60px;
+}
  }
 
 @media only screen and (min-width: 992px) and (max-width: 1999px){
   .landing-page h1{
     font-size: 8rem;
-    padding-top: 30px;
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+  .landing-page a p{
+    margin-bottom: 60px;
   }
 
 }
