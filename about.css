@@ -348,7 +348,7 @@ i.fa {
   font-size: 1.4em;
 }
 .landing-page h1{
-  padding-top: 60px;
+  padding-top: 40px;
 }
 .landing-page a p{
   margin-bottom: 70px;
@@ -359,15 +359,19 @@ i.fa {
 .section-width{
   width: 70%;
 }
+.landing-page h1{
+  padding-top: 30px;
+}
 .landing-page a p{
   margin-bottom: 60px;
 }
+
  }
 
 @media only screen and (min-width: 992px) and (max-width: 1999px){
   .landing-page h1{
     font-size: 8rem;
-    padding-top: 80px;
+    padding-top: 50px;
     margin-bottom: 80px;
   }
   .landing-page a p{
