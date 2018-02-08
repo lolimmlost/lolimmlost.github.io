@@ -348,10 +348,10 @@ i.fa {
   font-size: 1.4em;
 }
 .landing-page h1{
-  padding-top: 40px;
+  padding-top: 30px;
 }
 .landing-page a p{
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 }
 
@@ -360,7 +360,7 @@ i.fa {
   width: 70%;
 }
 .landing-page h1{
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .landing-page a p{
   margin-bottom: 60px;
@@ -375,7 +375,7 @@ i.fa {
     margin-bottom: 80px;
   }
   .landing-page a p{
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
 
 }
