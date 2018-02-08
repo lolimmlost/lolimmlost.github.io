@@ -97,7 +97,7 @@ i.fa:hover {
   color: var(--second-color);
 }
 h1 {
-  color: var(--black-color);
+  color: var(--main-color);
   font-family: 'Molengo', Georgia, Times, serif;
   font-size: 2em;
   padding: 20px 0 0 0;
@@ -173,6 +173,7 @@ p {
   height: 110px;
   border-radius: none;
   background: none;
+  align-items:center;
 }
 .snapcode-popup {
   opacity: 0;
@@ -181,8 +182,8 @@ p {
   height: 150px;
   background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/snapcode.png?raw=true) no-repeat center center;
   background-size: 128px;
-  background-color: #FAFBF4;
-  border-radius: 10px;
+  background-color: var(--main-color);
+  border-radius: 20px;
   margin-top: -220px;
   margin-left: 305px;
   display: none;
@@ -196,14 +197,19 @@ p {
   animation: slide ease-in-out 500ms forwards;
 }
 .rounded-border {
-  border-radius: .5em;
+  border-radius: .3em;
+}
+i {
+  justify-content: center;
+  align-items: center;
 }
 i.fa {
   font-size: 64px;
   line-height: 64px;
   text-align: center;
-  margin: 25px 20px;
+  padding: 20px;
   color: white;
+  border-radius: 10%;
 }
 .flex-Hcenter {
   justify-content: center;
