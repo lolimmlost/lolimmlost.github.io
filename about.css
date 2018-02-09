@@ -30,7 +30,7 @@ a p{
   font-size: 48px;
   color: white;
   text-shadow: 5px 5px var(--main-color);
-  margin: 30px 0 30px 0;
+  margin: 5px 0 5px 0;
 }
 a{
   text-decoration: none;
@@ -54,7 +54,8 @@ section {
 #headline{
 }
 #links{
-  padding-top:30px;
+  padding-top:0px;
+  margin:28px auto 28px auto;
 }
 
 nav {
