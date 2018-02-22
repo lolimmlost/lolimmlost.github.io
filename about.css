@@ -213,7 +213,7 @@ p {
   margin-left: 430px;
   margin-top: 20px;
   position: absolute;
-  background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/img/sjsu.jpg) center ;
+  background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/img/sjsu.jpg?raw=true) center ;
   background-size: 64px 64px;
   display: none;
 }
@@ -223,7 +223,7 @@ p {
   position: absolute;
   margin-left: 400px;
   margin-top: 20px;
-  background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/img/html5.svg) center ;
+  background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/img/html5.svg?raw=true) center ;
   background-size: 64px 64px;
   display: none;
 }
@@ -233,7 +233,7 @@ p {
   position: absolute;
   margin-left: 470px;
   margin-top: 20px;
-  background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/img/css3.svg) center ;
+  background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/img/css3.svg?raw=true) center ;
   background-size: 64px 64px;
   display: none;
 }
