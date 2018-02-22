@@ -94,12 +94,12 @@ section h1 {
  Art Logo
  ********************/
 span {
-     width: 350px;
-     height: 300px;
+     width: 400px;
+     height: 350px;
      background-color: var(--main-color2);
-     margin: 4px 4px;
+     margin: 10px 10px;
      flex-grow: 2;
-     //border: solid white 1px;
+     border: solid white 2px;
  }
 .slice-1 {
     background-color: blue;

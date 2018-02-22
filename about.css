@@ -131,6 +131,7 @@ p {
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
+  overflow: auto
 }
 .landing-page h1{
   font-family: "Mrs Sheppards";
@@ -206,6 +207,36 @@ p {
 .rounded-border {
   border-radius: .3em;
 }
+.sjsu-logo{
+  width: 64px;
+  height: 64px;
+  margin-left: 430px;
+  margin-top: 20px;
+  position: absolute;
+  background: url('img/sjsu.jpg') center ;
+  background-size: 64px 64px;
+  display: none;
+}
+.html-logo{
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 20px;
+  background: url('img/html5.svg') center ;
+  background-size: 64px 64px;
+  display: none;
+}
+.css-logo{
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  margin-left: 470px;
+  margin-top: 20px;
+  background: url('img/css3.svg') center ;
+  background-size: 64px 64px;
+  display: none;
+}
 i {
 }
 i.fa {
@@ -270,6 +301,15 @@ i.fa {
     color: white;
     background: none;
   }
+  .sjsu-logo{
+    display: none;
+  }
+  .html-logo{
+    display: none;
+  }
+    .css-logo{
+      display: none;
+    }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){
   .nav1{
@@ -320,6 +360,15 @@ i.fa {
     color: white;
     background: none;
   }
+  .sjsu-logo{
+    display: none;
+  }
+  .html-logo{
+    display: none;
+  }
+    .css-logo{
+      display: none;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
@@ -360,6 +409,16 @@ i.fa {
 .landing-page a p{
   margin-bottom: 60px;
 }
+.sjsu-logo{
+  display: none;
+}
+.html-logo{
+  display: none;
+}
+  .css-logo{
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -372,6 +431,15 @@ i.fa {
 .landing-page a p{
   margin-bottom: 60px;
 }
+.sjsu-logo{
+  display: block;
+}
+.html-logo{
+  display: block;
+}
+  .css-logo{
+    display: block;
+  }
 
  }
 
@@ -384,5 +452,14 @@ i.fa {
   .landing-page a p{
     margin-bottom: 70px;
   }
+  .sjsu-logo{
+    display: block;
+  }
+  .html-logo{
+    display: block;
+  }
+    .css-logo{
+      display: block;
+    }
 
 }
