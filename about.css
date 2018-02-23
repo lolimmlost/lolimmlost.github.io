@@ -31,6 +31,12 @@ a p {
   color: white;
   text-shadow: 4px 4px var(--main-color);
   margin: 5px 0 5px 0;
+  transition: color 300ms;
+}
+a p:hover{
+  color: var(--main-color);
+  text-shadow: 4px 4px white;
+
 }
 
 a {
@@ -66,7 +72,6 @@ section {
   font-size: 48px;
   margin: 0 auto;
   padding-bottom: 28px;
-  flex-direction: column;
 }
 
 #current {
@@ -121,14 +126,6 @@ li:hover>#current {
   border-bottom: none;
 }
 
-i.fa {
-  color: var(--off-white);
-  transition: color ease 300ms;
-}
-
-i.fa:hover {
-  color: var(--second-color);
-}
 
 h1 {
   color: var(--main-color);
@@ -286,6 +283,14 @@ i.fa {
   padding: 20px;
   color: white;
   border-radius: 10%;
+}
+i.fa {
+  color: var(--off-white);
+  transition: color ease 300ms;
+}
+
+i.fa:hover {
+  color: var(--second-color);
 }
 
 .flex-Hcenter {
