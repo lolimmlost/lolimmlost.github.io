@@ -2,7 +2,7 @@
   --main-color: #3c94cc;
   --red-color: #dca68e;
   --black-color: #22201c;
-  --second-color:#E16832;
+  --second-color: #E16832;
   --black-color: #242421;
   --grey-color: #988c76;
   --dark-olive: #5e3630;
@@ -10,8 +10,9 @@
   --soundcloud-color: #FF5500;
   --twitter-color: #00B6F1;
   --twitch-color: #6441A4;
-  --off-white:#FAFBF4;
+  --off-white: #FAFBF4;
 }
+
 *,
 ::before,
 ::after {
@@ -19,24 +20,25 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   margin: 0 auto;
-  background-color: var(--black-color)
+  background-color: var(--black-color);
 }
 
-a p{
-  font-family: "Montserrat";
-  font-size: 48px;
+a p {
   color: white;
-  text-shadow: 5px 5px var(--main-color);
+  text-shadow: 4px 4px var(--main-color);
   margin: 5px 0 5px 0;
 }
-a{
+
+a {
   text-decoration: none;
 }
+
 div {
-  background-color:var(--off-white);
+  background-color: var(--off-white);
 }
 
 section {
@@ -45,17 +47,35 @@ section {
   margin: 0 auto;
 }
 
-.section-border{
+.section-border {
   border-bottom: 1px grey solid;
 }
-.section-width{
+
+.section-width {
   width: 60%;
 }
-#headline{
+
+#headline {
+  font-family: 'Oleo Script', cursive;
+  text-align: left;
 }
-#links{
-  padding-top:0px;
-  margin:28px auto 28px auto;
+
+#links {
+  font-family: 'Crete Round', sans-serif;
+  text-align: left;
+  font-size: 48px;
+  margin: 0 auto;
+  padding-bottom: 28px;
+  flex-direction: column;
+}
+
+#current {
+  color: var(--main-color);
+  border-bottom: #2B2725 3px solid;
+}
+
+#final-section {
+  border-bottom: none;
 }
 
 nav {
@@ -72,16 +92,18 @@ nav a {
   margin: 20px auto;
   height: 80px;
 }
+
 .nav-blur {
   -webkit-box-shadow: 0px 4px -20px -8px black;
   -moz-box-shadow: 0px 4px -20px -8px black;
   box-shadow: 0px 4px -20px -8px black;
 }
+
 ul {
   margin-left: -40px;
 }
+
 li {
-  font-family: 'Droid Serif', Georgia, Times, serif;
   text-decoration: none;
   list-style: none;
   padding: 0px 8px;
@@ -89,40 +111,48 @@ li {
   color: #E16832;
   transition: all ease 200ms;
 }
+
 li:hover {
   color: black;
   border-bottom: #2B2725 3px solid;
 }
-li:hover > #current {
+
+li:hover>#current {
   border-bottom: none;
 }
+
 i.fa {
   color: var(--off-white);
   transition: color ease 300ms;
 }
+
 i.fa:hover {
   color: var(--second-color);
 }
+
 h1 {
   color: var(--main-color);
-  font-family: 'Molengo', Georgia, Times, serif;
-  font-size: 24px;
+  font-family: Georgia, Times, serif;
+  font-size: 32px;
   padding: 20px 0 0 0;
   margin: 0;
 }
+
 h2 {
   color: white;
-  font-family: 'Molengo', Georgia, Times, serif;
+  font-family: 'Crete Round', serif;
 }
+
 p {
-  font-family: 'Lekton', Helvetica, Arial, sans-serif;
-  font-size: 22px;
-  line-height: 30px;
+  font-family: 'Raleway', serif;
+  font-size: 24px;
+  line-height: 28px;
   color: var(--black-color);
-  padding: 5px 20px 5px 20px;
+  padding: 10px 20px;
   margin: 0;
 }
-.landing-page{
+
+.landing-page {
   text-align: center;
   height: 100vh;
   background-image: url("img/bg.jpg");
@@ -131,49 +161,52 @@ p {
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  overflow: auto
+  overflow: auto;
+  padding-left: 60px;
 }
-.landing-page h1{
-  font-family: "Mrs Sheppards";
+
+.landing-page h1 {
   text-shadow: 4px 4px white;
   font-size: 8rem;
   color: var(--main-color);
   padding: 0;
   margin: 0;
 }
-.centered{
+
+.centered {
   margin: 0 auto;
 }
-.main-blur{
+
+.main-blur {
   -webkit-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.75);
 }
-.hero-width{
+
+.hero-width {
   width: 90%;
 }
+
 .flex-container {
   display: flex;
 }
-.flex-column{
+
+.flex-column {
   flex-direction: column;
 }
+
 .flex-item-space {
   justify-content: space-around;
 }
+
 .contact {
   flex-direction: column;
 }
+
 .contact h1 {
   color: var(--second-color);
 }
-#current {
-  color: var(--main-color);
-  border-bottom: #2B2725 3px solid;
-}
-#final-section {
-  border-bottom: none;
-}
+
 .social-bar {
   margin-top: 1em;
   box-sizing: border-box;
@@ -181,8 +214,9 @@ p {
   height: 110px;
   border-radius: none;
   background: none;
-  align-items:center;
+  align-items: center;
 }
+
 .snapcode-popup {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -198,47 +232,53 @@ p {
   position: absolute;
   overflow: hidden;
 }
-.snap-container:hover > .snapcode-popup {
+
+.snap-container:hover>.snapcode-popup {
   opacity: 1;
   filter: alpha(opacity=100);
   display: block;
   animation: slide ease-in-out 500ms forwards;
 }
+
 .rounded-border {
   border-radius: .3em;
 }
-.sjsu-logo{
+
+.sjsu-logo {
   width: 64px;
   height: 64px;
   margin-left: 430px;
   margin-top: 20px;
   position: absolute;
-  background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/img/sjsu.jpg?raw=true) center ;
+  background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/img/sjsu.jpg?raw=true) center;
   background-size: 64px 64px;
   display: none;
 }
-.html-logo{
+
+.html-logo {
   width: 64px;
   height: 64px;
   position: absolute;
   margin-left: 400px;
   margin-top: 20px;
-  background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/img/html5.svg?raw=true) center ;
+  background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/img/html5.svg?raw=true) center;
   background-size: 64px 64px;
   display: none;
 }
-.css-logo{
+
+.css-logo {
   width: 64px;
   height: 64px;
   position: absolute;
   margin-left: 470px;
   margin-top: 20px;
-  background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/img/css3.svg?raw=true) center ;
+  background: url(https://github.com/lolimmlost/lolimmlost.github.io/blob/master/img/css3.svg?raw=true) center;
   background-size: 64px 64px;
   display: none;
 }
-i {
-}
+
+i {}
+
 i.fa {
   font-size: 64px;
   line-height: 64px;
@@ -247,17 +287,21 @@ i.fa {
   color: white;
   border-radius: 10%;
 }
+
 .flex-Hcenter {
   justify-content: center;
 }
+
 .flex-Vcenter {
   align-items: center;
 }
-.copy{
+
+.copy {
   text-align: center;
   color: white;
   margin-bottom: 20px;
 }
+
 @keyframes slide {
   0% {
     opacity: 0;
@@ -269,197 +313,199 @@ i.fa {
     transform: translateX(-350px);
   }
 }
-@media only screen and (min-width: 300px) and (max-width: 319px){
-  .landing-page h1{
-    font-size: 5rem;
-    padding-top: 10px;
+
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .landing-page h1 {
+    font-size: 3.8rem;
+    padding-top: 30px;
   }
-  a p{
-    margin-top: 10px;
+  a p {
+    margin-top: 40px;
     margin-bottom: 20px;
     font-size: 2rem;
   }
-  h1{
+  h1 {
     font-size: 2.1em;
   }
-  p{
+  p {
     padding: 0;
   }
-  .social-bar{
+  .social-bar {
     width: 100%;
     height: 70px;
     background: none;
   }
-  .section-width{
-    width:98%;
+  .section-width {
+    width: 98%;
   }
-  i.fa{
+  i.fa {
     font-size: 38px;
     line-height: 38px;
-    margin:7px;
+    margin: 7px;
     padding: 0;
     color: white;
     background: none;
   }
-  .sjsu-logo{
+  .sjsu-logo {
     display: none;
   }
-  .html-logo{
+  .html-logo {
     display: none;
   }
-    .css-logo{
-      display: none;
-    }
+  .css-logo {
+    display: none;
+  }
 }
-@media only screen and (min-width: 320px) and (max-width: 479px){
-  .nav1{
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .nav1 {
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  section{
+  section {
     padding-left: 20px;
-    padding-right:20px;
+    padding-right: 20px;
   }
-  .landing-page h1{
-    font-size: 5rem;
-    padding-top: 50px;
+  .landing-page h1 {
+    font-size: 4.4rem;
+    padding-top: 30px;
+    margin: 0;
   }
   .landing-page {
+    padding-left: 20px;
   }
-  .section-width{
+  .section-width {
     width: 100%;
   }
-  li{
+  li {
     font-size: 16px;
   }
-  .hero-width{
+  .hero-width {
     width: 90%;
   }
-  h1{
+  h1 {
     font-size: 2em;
   }
-  p{
+  p {
     line-height: 1.5em;
   }
-  a p{
-    margin-top: 30px;
-    margin-bottom: 10px;
+  #links {
+    padding-bottom: 8px;
+    margin: 0;
+    line-height: normal;
     font-size: 2.8rem;
   }
-  .social-bar{
+  .social-bar {
     width: 100%;
     height: 80px;
     background: none;
   }
-  i.fa{
-    font-size: 38px;
-    line-height: 38px;
-    margin:7px;
+  i.fa {
+    font-size: 48px;
+    line-height: 48px;
+    margin: 7px;
     padding: 0;
     color: white;
     background: none;
   }
-  .sjsu-logo{
+  .sjsu-logo {
     display: none;
   }
-  .html-logo{
+  .html-logo {
     display: none;
   }
-    .css-logo{
-      display: none;
-    }
+  .css-logo {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px){
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   i.fa {
-  font-size: 48px;
-  line-height: 48px;
-  text-align: center;
-  margin: 20px 15px;
-  color: white;
-}
-.section-width{
-  width: 80%;
-}
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin: 20px 5px;
+    color: white;
+  }
+  .section-width {
+    width: 87%;
+  }
   .social-bar {
-  height: 100px;
-}
+    height: 100px;
+  }
   .snapcode-popup {
-  margin-top: -60px;
-  margin-left: 330px;
-  width: 72px;
-  height: 72px;
-  background-size: 64px;
-}
-  .nav1{
-}
-  .hero-width{
-  width: 90%;
-}
-  h1{
-  font-size: 1.8em;
-}
-  p{
-  font-size: 1.4em;
-}
-.landing-page h1{
-  padding-top: 30px;
-}
-.landing-page a p{
-  margin-bottom: 60px;
-}
-.sjsu-logo{
-  display: none;
-}
-.html-logo{
-  display: none;
-}
-  .css-logo{
+    margin-top: -60px;
+    margin-left: 330px;
+    width: 72px;
+    height: 72px;
+    background-size: 64px;
+  }
+  .nav1 {}
+  .hero-width {
+    width: 90%;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  p {
+    font-size: 1.4em;
+  }
+  #headline {
+    font-size: 6rem;
+    padding-top: 30px;
+  }
+  #links {
+    margin-bottom: 20px;
+  }
+  .sjsu-logo {
     display: none;
   }
-
+  .html-logo {
+    display: none;
+  }
+  .css-logo {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
-.section-width{
-  width: 70%;
-}
-.landing-page h1{
-  padding-top: 40px;
-}
-.landing-page a p{
-  margin-bottom: 60px;
-}
-.sjsu-logo{
-  display: block;
-}
-.html-logo{
-  display: block;
-}
-  .css-logo{
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-width {
+    width: 80%;
+  }
+  .landing-page h1 {
+    padding-top: 40px;
+  }
+  .landing-page a p {
+    margin-bottom: 60px;
+  }
+  .sjsu-logo {
     display: block;
   }
+  .html-logo {
+    display: block;
+  }
+  .css-logo {
+    display: block;
+  }
+}
 
- }
-
-@media only screen and (min-width: 992px) and (max-width: 1999px){
-  .landing-page h1{
+@media only screen and (min-width: 992px) and (max-width: 1999px) {
+  .landing-page h1 {
     font-size: 8rem;
     padding-top: 50px;
     margin-bottom: 80px;
   }
-  .landing-page a p{
+  .landing-page a p {
     margin-bottom: 70px;
   }
-  .sjsu-logo{
+  .sjsu-logo {
     display: block;
   }
-  .html-logo{
+  .html-logo {
     display: block;
   }
-    .css-logo{
-      display: block;
-    }
-
+  .css-logo {
+    display: block;
+  }
 }
