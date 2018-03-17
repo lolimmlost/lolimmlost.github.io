@@ -274,11 +274,11 @@ p {
   display: none;
 }
 .carousel{
-  height: 720px;
+  height: 630px;
 }
 .carousel img {
   display: block;
-  height: 400px;
+  height: 600px;
 }
 
 
@@ -310,8 +310,11 @@ p {
   margin: 0;
   border-radius: 0;
 }
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
 .flickity-page-dots {
-  bottom: -22px;
+  bottom: 44px;
 }
 
 
@@ -401,6 +404,13 @@ i.fa:hover {
   .css-logo {
     display: none;
   }
+  .carousel{
+    height: 330px;
+  }
+  .carousel img {
+    display: block;
+    height: 300px;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
@@ -464,6 +474,13 @@ i.fa:hover {
   .css-logo {
     display: none;
   }
+  .carousel{
+    height: 330px;
+  }
+  .carousel img {
+    display: block;
+    height: 300px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -513,6 +530,13 @@ i.fa:hover {
   .css-logo {
     display: none;
   }
+  .carousel{
+    height: 430px;
+  }
+  .carousel img {
+    display: block;
+    height: 400px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -533,6 +557,13 @@ i.fa:hover {
   }
   .css-logo {
     display: block;
+  }
+  .carousel{
+    height: 530px;
+  }
+  .carousel img {
+    display: block;
+    height: 500px;
   }
 }
 
