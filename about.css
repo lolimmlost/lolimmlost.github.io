@@ -273,6 +273,13 @@ p {
   background-size: 64px 64px;
   display: none;
 }
+.soundcloudd{
+  padding-bottom: 30px;
+  flex-direction: column;
+}
+.soundcloudd h1{
+  padding-bottom: 18px;
+}
 .carousel{
   height: 630px;
 }
