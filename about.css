@@ -276,9 +276,26 @@ p {
 .carousel{
   height: 630px;
 }
+.carousel-cell {
+  height: 100%;
+}
 .carousel img {
   display: block;
   height: 600px;
+}
+.static-banner {
+  position: absolute;
+  background: hsla(0, 0%, 0%, 0.3);
+  z-index: 1;
+  padding: 4px 20px;
+  font-family: 'Crete Round', sans-serif;
+  color: var(--main-color);
+  font-size: 26px;
+  pointer-events: none;
+}
+.static-banner1 {
+  left: 15px;
+  top: 15px;
 }
 
 
@@ -405,7 +422,7 @@ i.fa:hover {
     display: none;
   }
   .carousel{
-    height: 330px;
+    height: 320px;
   }
   .carousel img {
     display: block;
@@ -475,7 +492,7 @@ i.fa:hover {
     display: none;
   }
   .carousel{
-    height: 330px;
+    height: 320px;
   }
   .carousel img {
     display: block;
@@ -531,7 +548,7 @@ i.fa:hover {
     display: none;
   }
   .carousel{
-    height: 430px;
+    height: 420px;
   }
   .carousel img {
     display: block;
@@ -559,7 +576,7 @@ i.fa:hover {
     display: block;
   }
   .carousel{
-    height: 530px;
+    height: 520px;
   }
   .carousel img {
     display: block;
