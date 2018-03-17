@@ -273,6 +273,47 @@ p {
   background-size: 64px 64px;
   display: none;
 }
+.carousel{
+  height: 720px;
+}
+.carousel img {
+  display: block;
+  height: 400px;
+}
+
+
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+.flickity-page-dots {
+  bottom: -22px;
+}
+
 
 i {}
 
