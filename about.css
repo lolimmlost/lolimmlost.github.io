@@ -33,10 +33,10 @@ a p {
   margin: 5px 0 5px 0;
   transition: color 300ms;
 }
-a p:hover{
+
+a p:hover {
   color: var(--main-color);
   text-shadow: 4px 4px white;
-
 }
 
 a {
@@ -125,7 +125,6 @@ li:hover {
 li:hover>#current {
   border-bottom: none;
 }
-
 
 h1 {
   color: var(--main-color);
@@ -273,23 +272,29 @@ p {
   background-size: 64px 64px;
   display: none;
 }
-.soundcloudd{
+
+.soundcloudd {
   padding-bottom: 30px;
   flex-direction: column;
 }
-.soundcloudd h1{
+
+.soundcloudd h1 {
   padding-bottom: 18px;
 }
-.carousel{
+
+.carousel {
   height: 630px;
 }
+
 .carousel-cell {
   height: 100%;
 }
+
 .carousel img {
   display: block;
   height: 600px;
 }
+
 .static-banner {
   position: absolute;
   background: hsla(0, 0%, 0%, 0.3);
@@ -300,30 +305,36 @@ p {
   font-size: 26px;
   pointer-events: none;
 }
+
 .static-banner1 {
   left: 15px;
   top: 15px;
 }
 
-
-
 /* big buttons, no circle */
+
 .flickity-prev-next-button {
   width: 60px;
   height: 60px;
   background: transparent;
 }
+
 .flickity-prev-next-button:hover {
   background: transparent;
 }
+
 /* arrow color */
+
 .flickity-prev-next-button .arrow {
   fill: white;
 }
+
 .flickity-prev-next-button.no-svg {
   color: white;
 }
+
 /* hide disabled button */
+
 .flickity-prev-next-button:disabled {
   display: none;
 }
@@ -334,13 +345,14 @@ p {
   margin: 0;
   border-radius: 0;
 }
+
 .flickity-page-dots .dot.is-selected {
   background: white;
 }
+
 .flickity-page-dots {
   bottom: 44px;
 }
-
 
 i {}
 
@@ -352,6 +364,7 @@ i.fa {
   color: white;
   border-radius: 10%;
 }
+
 i.fa {
   color: var(--off-white);
   transition: color ease 300ms;
@@ -428,7 +441,7 @@ i.fa:hover {
   .css-logo {
     display: none;
   }
-  .carousel{
+  .carousel {
     height: 320px;
   }
   .carousel img {
@@ -498,7 +511,7 @@ i.fa:hover {
   .css-logo {
     display: none;
   }
-  .carousel{
+  .carousel {
     height: 320px;
   }
   .carousel img {
@@ -554,7 +567,7 @@ i.fa:hover {
   .css-logo {
     display: none;
   }
-  .carousel{
+  .carousel {
     height: 420px;
   }
   .carousel img {
@@ -582,7 +595,7 @@ i.fa:hover {
   .css-logo {
     display: block;
   }
-  .carousel{
+  .carousel {
     height: 520px;
   }
   .carousel img {
