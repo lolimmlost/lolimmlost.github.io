@@ -92,7 +92,7 @@ input[type="submit"]:hover {
   margin: 10px auto;
 }
 body.class1 {
-  background: url("https://static.pexels.com/photos/790226/pexels-photo-790226.jpeg");
+  background: url(" https://lolimmlost.github.io/extras/StartPage/1.jpg ");
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -100,7 +100,7 @@ body.class1 {
 }
 
 body.class2 {
-  background: url("https://static.pexels.com/photos/794079/pexels-photo-794079.jpeg");
+  background: url("https://lolimmlost.github.io/extras/StartPage/2.jpg");
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -108,21 +108,21 @@ body.class2 {
 }
 
 body.class3 {
-  background: url("https://static.pexels.com/photos/50859/pexels-photo-50859.jpeg");
+  background: url("https://lolimmlost.github.io/extras/StartPage/3.jpg");
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
 }
 body.class4 {
-  background: url("https://static.pexels.com/photos/941272/pexels-photo-941272.jpeg");
+  background: url("https://lolimmlost.github.io/extras/StartPage/4.jpg");
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
 }
 body.class5 {
-  background: url("https://static.pexels.com/photos/14675/pexels-photo-14675.jpeg");
+  background: url("https://lolimmlost.github.io/extras/StartPage/5.jpg");
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
