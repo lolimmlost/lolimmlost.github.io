@@ -11,6 +11,10 @@
   --twitter-color: #00B6F1;
   --twitch-color: #6441A4;
   --off-white: #FDFDFD;
+  --info-color:#00CAE3;
+  --success-color:#55B559;
+  --warning-color:#FF9E0F;
+  --error-color:#F55145;
 }
 
 *,
