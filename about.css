@@ -24,23 +24,53 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+h1{
+  font-family: 'Raleway', serif;
+  font-size: 50px;
+}
+h2{
+  font-family: 'Raleway', serif;
+  font-size: 46px;
+}
+h3{
+  font-family: 'Raleway', serif;
+  font-size: 38px;
+}
+h4{
+  font-family: 'Raleway', serif;
+  font-size: 22px;
+}
+h5{
+  font-family: 'Raleway', serif;
+  font-size: 18px;
+}
+p{
+  font-family: 'Raleway', serif;
+  font-size:16px;
+}
+p.small{
+  font-family: 'Raleway', serif;
+  font-size: 13px;
+}
+.musicSection{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 body {
   width: 100%;
   margin: 0 auto;
   background-color: var(--black-color);
+  background-image: linear-gradient(125deg, #184E68, #57CA85);
 }
 
 a p {
   color: white;
-  text-shadow: 4px 4px var(--main-color);
   margin: 5px 0 5px 0;
+  border: 1px solid grey;
   transition: color 300ms;
 }
 
 a p:hover {
-  color: var(--main-color);
-  text-shadow: 4px 4px white;
 }
 
 a {
@@ -52,8 +82,8 @@ div {
 }
 
 section {
-  padding: 80px 32px;
-  padding-bottom: 60px;
+  padding: 40px 32px;
+  padding-bottom: 40px;
   margin: 0 auto;
 }
 
@@ -64,18 +94,22 @@ section {
 .section-width {
   width: 60%;
 }
+.aboutStyle{
+}
 
 #headline {
   font-family: 'Oleo Script', cursive;
   text-align: left;
 }
 
-#links {
-  font-family: 'Crete Round', sans-serif;
+.links {
   text-align: left;
-  font-size: 48px;
+  font-size: 36px;
   margin: 0 auto;
   padding-bottom: 28px;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
 }
 
 #current {
@@ -132,29 +166,22 @@ li:hover>#current {
 
 h1 {
   color: var(--main-color);
-  font-family: Georgia, Times, serif;
   font-size: 32px;
-  padding: 20px 0 0 0;
   margin: 0;
 }
 
 h2 {
   color: white;
-  font-family: 'Crete Round', serif;
 }
 
 p {
-  font-family: 'Raleway', serif;
-  font-size: 24px;
-  line-height: 28px;
   color: var(--black-color);
-  padding: 10px 20px;
+  padding-top: 20px;
   margin: 0;
 }
 
 .landing-page {
-  text-align: center;
-  height: 100vh;
+  height: 100%;
   background-image: url("img/bg.jpg");
   background-size: cover;
   background-position: center center;
@@ -162,7 +189,8 @@ p {
   -o-background-size: cover;
   -webkit-background-size: cover;
   overflow: auto;
-  padding-left: 60px;
+  padding-left: 80px;
+  margin: 0;
 }
 
 .landing-page h1 {
@@ -184,7 +212,7 @@ p {
 }
 
 .hero-width {
-  width: 90%;
+  width: 80%;
 }
 
 .flex-container {
@@ -407,19 +435,28 @@ i.fa:hover {
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .landing-page h1 {
     font-size: 3.8rem;
+  }
+  .landing-page{
     padding-top: 30px;
+    padding-left: 40px;
   }
   a p {
     margin-top: 40px;
     margin-bottom: 20px;
-    font-size: 1rem;
   }
   h1 {
     font-size: 2.1em;
   }
+  h4{
+    font-size: 18px;
+  }
   p {
-    padding: 0;
-    font-size: 1.1rem;
+    padding-top: 20px;
+  }
+.contact{
+}
+  .musicSection{
+    padding-top: 0px;
   }
   .social-bar {
     width: 100%;
@@ -464,14 +501,15 @@ i.fa:hover {
   section {
     padding-left: 20px;
     padding-right: 20px;
+
   }
   .landing-page h1 {
     font-size: 4.4rem;
-    padding-top: 30px;
     margin: 0;
   }
-  .landing-page {
-    padding-left: 20px;
+  .landing-page{
+    padding-top: 30px;
+    padding-left: 40px;
   }
   .section-width {
     width: 100%;
@@ -486,7 +524,6 @@ i.fa:hover {
     font-size: 2em;
   }
   p {
-    line-height: 1.5em;
   }
   #links {
     padding-bottom: 8px;
@@ -554,7 +591,6 @@ i.fa:hover {
     font-size: 1.8em;
   }
   p {
-    font-size: 1.4em;
   }
   #headline {
     font-size: 6rem;
