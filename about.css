@@ -65,9 +65,9 @@ body {
 
 a p {
   color: white;
-  margin: 5px 0 5px 0;
-  border: 1px solid grey;
   transition: color 300ms;
+  margin: 0;
+  padding: 0;
 }
 
 a p:hover {
@@ -107,9 +107,6 @@ section {
   font-size: 36px;
   margin: 0 auto;
   padding-bottom: 28px;
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
 }
 
 #current {
