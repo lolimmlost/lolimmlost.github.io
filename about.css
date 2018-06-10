@@ -330,7 +330,7 @@ p {
   background: hsla(0, 0%, 0%, 0.3);
   z-index: 1;
   padding: 4px 20px;
-  font-family: 'Crete Round', sans-serif;
+  font-family: 'Raleway', serif;
   color: var(--main-color);
   font-size: 26px;
   pointer-events: none;
