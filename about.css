@@ -11,10 +11,10 @@
   --twitter-color: #00B6F1;
   --twitch-color: #6441A4;
   --off-white: #FDFDFD;
-  --info-color:#00CAE3;
-  --success-color:#55B559;
-  --warning-color:#FF9E0F;
-  --error-color:#F55145;
+  --info-color: #00CAE3;
+  --success-color: #55B559;
+  --warning-color: #FF9E0F;
+  --error-color: #F55145;
 }
 
 *,
@@ -24,38 +24,47 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-h1{
+
+h1 {
   font-family: 'Raleway', serif;
   font-size: 50px;
 }
-h2{
+
+h2 {
   font-family: 'Raleway', serif;
   font-size: 46px;
 }
-h3{
+
+h3 {
   font-family: 'Raleway', serif;
   font-size: 38px;
 }
-h4{
+
+h4 {
   font-family: 'Raleway', serif;
   font-size: 22px;
 }
-h5{
+
+h5 {
   font-family: 'Raleway', serif;
   font-size: 18px;
 }
-p{
+
+p {
   font-family: 'Raleway', serif;
-  font-size:16px;
+  font-size: 16px;
 }
-p.small{
+
+p.small {
   font-family: 'Raleway', serif;
   font-size: 13px;
 }
-.musicSection{
+
+.musicSection {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -70,8 +79,7 @@ a p {
   padding: 0;
 }
 
-a p:hover {
-}
+a p:hover {}
 
 a {
   text-decoration: none;
@@ -94,8 +102,8 @@ section {
 .section-width {
   width: 60%;
 }
-.aboutStyle{
-}
+
+.aboutStyle {}
 
 #headline {
   font-family: 'Oleo Script', cursive;
@@ -434,11 +442,11 @@ i.fa:hover {
   .landing-page h1 {
     font-size: 4rem;
   }
-  .landing-page{
+  .landing-page {
     padding-top: 30px;
     padding-left: 40px;
   }
-  .links{
+  .links {
     font-size: 28px;
   }
   a p {
@@ -448,15 +456,14 @@ i.fa:hover {
   h1 {
     font-size: 2.1em;
   }
-  h4{
+  h4 {
     font-size: 18px;
   }
   p {
     padding-top: 20px;
   }
-.contact{
-}
-  .musicSection{
+  .contact {}
+  .musicSection {
     padding-top: 0px;
   }
   .social-bar {
@@ -502,17 +509,16 @@ i.fa:hover {
   section {
     padding-left: 20px;
     padding-right: 20px;
-
   }
   .landing-page h1 {
     font-size: 4.8rem;
     margin: 0;
   }
-  .landing-page{
+  .landing-page {
     padding-top: 30px;
     padding-left: 40px;
   }
-  .links{
+  .links {
     font-size: 32px;
   }
   .section-width {
@@ -527,8 +533,7 @@ i.fa:hover {
   h1 {
     font-size: 2em;
   }
-  p {
-  }
+  p {}
   #links {
     padding-bottom: 8px;
     margin: 0;
@@ -594,8 +599,7 @@ i.fa:hover {
   h1 {
     font-size: 1.8em;
   }
-  p {
-  }
+  p {}
   .landing-page h1 {
     font-size: 6.8rem;
     padding-top: 30px;
@@ -648,7 +652,6 @@ i.fa:hover {
     display: block;
     height: 500px;
   }
-
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1999px) {
