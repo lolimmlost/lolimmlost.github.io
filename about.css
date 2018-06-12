@@ -175,6 +175,7 @@ p {
   color: var(--black-color);
   padding-top: 20px;
   margin: 0;
+  line-height: 200%;
 }
 
 .landing-page {
@@ -431,11 +432,14 @@ i.fa:hover {
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .landing-page h1 {
-    font-size: 3.8rem;
+    font-size: 4rem;
   }
   .landing-page{
     padding-top: 30px;
     padding-left: 40px;
+  }
+  .links{
+    font-size: 28px;
   }
   a p {
     margin-top: 40px;
@@ -501,12 +505,15 @@ i.fa:hover {
 
   }
   .landing-page h1 {
-    font-size: 4.4rem;
+    font-size: 4.8rem;
     margin: 0;
   }
   .landing-page{
     padding-top: 30px;
     padding-left: 40px;
+  }
+  .links{
+    font-size: 32px;
   }
   .section-width {
     width: 100%;
@@ -589,8 +596,8 @@ i.fa:hover {
   }
   p {
   }
-  #headline {
-    font-size: 6rem;
+  .landing-page h1 {
+    font-size: 6.8rem;
     padding-top: 30px;
   }
   #links {
@@ -620,6 +627,7 @@ i.fa:hover {
   }
   .landing-page h1 {
     padding-top: 40px;
+    font-size: 8rem;
   }
   .landing-page a p {
     margin-bottom: 60px;
@@ -662,36 +670,3 @@ i.fa:hover {
     display: block;
   }
 }
-
-/*
-Experimental Font Sizing
-*/
-@media (min-width: 858px) {
-        html {
-            font-size: 12px;
-        }
-    }
-
-    @media (min-width: 780px) {
-        html {
-            font-size: 11px;
-        }
-    }
-
-    @media (min-width: 702px) {
-        html {
-            font-size: 10px;
-        }
-    }
-
-    @media (min-width: 724px) {
-        html {
-            font-size: 9px;
-        }
-    }
-
-    @media (max-width: 623px) {
-        html {
-            font-size: 8px;
-        }
-    }
