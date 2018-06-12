@@ -179,7 +179,7 @@ p {
 
 .landing-page {
   height: 100%;
-  background-image: url("img/bg.jpg");
+  background-image: url("img/bg.png");
   background-size: cover;
   background-position: center center;
   -moz-background-size: cover;
