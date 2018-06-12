@@ -409,7 +409,7 @@ i.fa {
 }
 
 i.fa:hover {
-  color: var(--second-color);
+  color: var(--black-color);
 }
 
 .flex-Hcenter {
