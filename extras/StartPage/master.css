@@ -1,59 +1,30 @@
-html,
-body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
+* {
+  margin: 0 auto;
   padding: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #111;
-}
-
-body {
-  background-color: #fdfafa;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
   text-align: center;
-  background: url("https://lolimmlost.github.io/extras/StartPage/1.jpg");
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
+  font-family: 'Work Sans', sans-serif;
+  transition: all 0.3s ease-out;
 }
-h1 {
-  font-size: 38px;
-  line-height: 38px;
-  padding: 0;
+body{
+  max-width: 95%;
+  margin-top: 20px;
 }
-span {
-  background-color: black;
-  margin: 0;
-  padding: 0 32px;
-  margin-bottom: 10px;
-}
-.main-wrap {
-  border: 1px dotted green;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+a{
+  font-size: 18px;
+  color: black;
 }
 input {
   background: #fff;
+  width:500px;
 }
 input[type="text"] {
-  height: 80px;
+  height: 40px;
   border: none;
   border-bottom: 1px solid rgb(70, 100, 70);
   font-size: 18px;
 }
 input[type="submit"] {
-  height: 80px;
+  height: 40px;
   border: none;
   font-size: 18px;
   transition: opacity 400ms ease;
@@ -61,169 +32,86 @@ input[type="submit"] {
 input[type="submit"]:hover {
   opacity: 0.8;
 }
-.search-bar {
+.search{
+  text-align: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.search-bar:hover{
+  box-shadow: 0px 0px 0px 6px #D3DFFF;
+}
+.search-bar{
   margin: 0 auto;
-  width: 240px;
-  height: 100px;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  display: flex;
-  flex-direction: column;
-  transition: all 400ms ease-in-out;
+  width: 500px;
+  height: 80px;
+
 }
-.bgButton {
-  background: #000;
-  width: 20px;
-  height: 20px;
-  border: 1px #fff solid;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  display: inline-block;
+.tiles{
+  max-width:80%;
+  margin-top: 20px;
 }
-.bgButton:hover {
-  width: 25px;
-  height: 25px;
-  top: 5px;
-  left: 5px;
-  transition: all 300ms ease-in-out;
-}
-.backgroundWrap {
-  margin: 40px auto;
-}
-.favorites{
-  margin: 0;
-  padding: 0;
-  width: 95%;
-  max-width: 800px;
-}
-.card {
-  display: inline-block;
-  width: 260px;
-  height: 220px;
-  background: white;
-  margin: 0 12px;
-  margin-bottom: 32px;
-  transition: all .5s ease-out;
-  cursor: pointer;
-  border-radius: 2px 2px 0 0;
-}
-.card p {
-  margin: 0;
-  padding-top: 8px;
-  font-size: 14px;
-  color: black;
-  background-color: #eee;
-  height: 30px;
-}
-.card a {
+.link{
   text-decoration: none;
 }
-.card:hover {
-  box-shadow: 0 2px 0 -1px #bdbdbd,
-  0 4px 0 -2px #bdbdbd,
-  0 0 2px #bdbdbd,
-  0 8px 16px #bdbdbd;
-  background-position: 0px -10px;
-  -moz-transform: scale(1.2,1.2);
-  -webkit-transform: scale(1.2,1.2);
-  transform: scale(1.2,1.2)
-  transition: all ease-in-out 200ms;
+.tile-wrap{
+  width: 260px;
+  height: 250px;
+  background-color: rgb(224, 224, 224);
+  margin: 15px;
+  display: inline-block;
+  border-radius: 5px;
 }
-.canvas {
-  background-color: white;
-  color: white;
-  background: url("https://avatars3.githubusercontent.com/u/515326?v=3&s=400");
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
+.tile-wrap:hover{
+box-shadow: 0px 0px 0px 6px #D3DFFF;
 }
-.aplia {
-  background-color: white;
-  background: url("https://www.aplia.com/images/aplia_logo.jpg");
-
-
+.tile-image{
+width: 240px;
+height: 200px;
+margin-top: 10px;
+background-color: white;
 }
-.youTube {
-  background-color: white;
-  background: url("https://www.youtube.com/yt/about/media/images/brand-resources/icons/YouTube_icon_full-color.svg");
-  background-size: 260px 270px;
+.gmail{
+  background-image: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia.idownloadblog.com%2Fwp-content%2Fuploads%2F2016%2F10%2F2000px-New_Logo_Gmail.svg_.png&f=1');
   background-repeat: no-repeat;
+  background-size:240px 200px, contain;
+}
+.canvas{
+  background-image: url('https://lh3.ggpht.com/Enz_xjXLJ4IVLt8z59qQ9Zlg4AmBc_4wzzm6xgnCsIYX8nPAPteDSVc9dAgITtha_SUY=w300');
+  background-repeat: no-repeat;
+  background-size:240px 200px, contain;
+}
+.youtube{
+  background-image: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwvuimc.files.wordpress.com%2F2014%2F06%2Fyoutube.png&f=1');
+  background-repeat: no-repeat;
+  background-size:240px 200px, contain;
+}
+.netflix{
+  background-image: url('https://proxy.duckduckgo.com/iur/?f=1&image_host=http%3A%2F%2Fnerdophiles.files.wordpress.com%2F2013%2F11%2Fnetflix-logo.png&u=https://nerdophiles.files.wordpress.com/2013/11/netflix-logo.png');
+  background-repeat: no-repeat;
+  background-size:240px 200px, cover;
+}
+.twitter{
+  background-image: url('https://duckduckgo.com/i/669b3055.png');
+  background-repeat: no-repeat;
+  background-size:240px 200px, cover;
+}
+.amazon{
+  background-image: url('https://tamebay.com/wp-content/uploads/2017/02/amazon_logo.jpg');
+  background-repeat: no-repeat;
+  background-size:240px 200px, cover;
+}
+.tile-text{
+  padding-top: 9px;
+}
 
+#clockbox{
+  text-align:center;
 }
-.netflix {
-  background-color: white;
-  background: url("http://coyotepr.uk/wp-content/uploads/2017/09/Hx0FkfBI_400x400.jpg");
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-}
-body.class1 {
-  background: url(" https://lolimmlost.github.io/extras/StartPage/1.jpg ");
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-}
-
-body.class2 {
-  background: url("https://lolimmlost.github.io/extras/StartPage/2.jpg");
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-}
-
-body.class3 {
-  background: url("https://lolimmlost.github.io/extras/StartPage/3.jpg");
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-}
-body.class4 {
-  background: url("https://lolimmlost.github.io/extras/StartPage/4.jpg");
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-}
-body.class5 {
-  background: url("https://lolimmlost.github.io/extras/StartPage/5.jpg");
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-}
-@media only screen and (min-width: 320px) and (max-width: 439px) {
-  .search-bar {
-    width: 300px;
+@media only screen and (max-width: 530px) {
+	.search-bar{
+    width: 320px;
   }
-  .card {
-    width:100px;
-    height: 100px;
-    display: inline-block;
-    margin: 0 3px;
-    margin-bottom: 8px;
-  }
-}
-@media only screen and (min-width: 440px) and (max-width: 639px) {
-  .search-bar {
-    width: 400px;
-  }
-}
-@media only screen and (min-width: 640px) and (max-width: 739px) {
-  .search-bar {
-    width: 600px;
-  }
-}
-@media only screen and (min-width: 740px) and (max-width: 840px) {
-  .search-bar {
-    width: 700px;
-  }
-}
-@media only screen and (min-width: 841px) and (max-width: 2000px) {
-  .search-bar {
-    width: 800px;
+  input{
+    width: 320px;
   }
 }
