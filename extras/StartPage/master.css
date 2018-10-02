@@ -4,14 +4,35 @@
   text-align: center;
   font-family: 'Work Sans', sans-serif;
   transition: all 0.3s ease-out;
+  --small-margins: 40px;
+  --large-margins: 80px;
+  --tile-width: 200px;
+  --tile-height: 190px;
+  --tile-image-width: 180px;
+  --tile-image-height: 140px;
+  --tile-margin: 20px;
+  --tile-margin-bottom:25px;
 }
 body{
-  max-width: 95%;
-  margin-top: 20px;
+  max-width: 100%;
+  display: block;
 }
+
 a{
   font-size: 18px;
   color: black;
+  margin: 0;
+  padding: 0;
+}
+a.link{
+  display: inline-block;
+}
+
+header{
+  margin-top: var(--small-margins);
+}
+#clockbox{
+  text-align:center;
 }
 input {
   background: #fff;
@@ -35,7 +56,7 @@ input[type="submit"]:hover {
 .search{
   text-align: center;
   align-items: center;
-  margin: 20px auto;
+  margin: var(--small-margins) auto;
 }
 .search-bar:hover{
   box-shadow: 0px 0px 0px 6px #D3DFFF;
@@ -49,69 +70,154 @@ input[type="submit"]:hover {
 .tiles{
   max-width:80%;
   margin-top: 20px;
+  display: table;
+  text-align: center;
+}
+.tiles:after{
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 .link{
+  width: var(--tile-width) +1;
+  height: var(--tile-height)+1;
   text-decoration: none;
+  padding: 0;
+  margin:0;
 }
 .tile-wrap{
-  width: 260px;
-  height: 250px;
+  margin-left: var(--tile-margin);
+  margin-bottom: var(--tile-margin-bottom);
+  width: var(--tile-width);
+  height: var(--tile-height);
   background-color: rgb(224, 224, 224);
-  margin: 15px;
   display: inline-block;
+  text-align: center;
   border-radius: 5px;
 }
 .tile-wrap:hover{
 box-shadow: 0px 0px 0px 6px #D3DFFF;
 }
 .tile-image{
-width: 240px;
-height: 200px;
+width: var(--tile-image-width);
+height: var(--tile-image-height);
 margin-top: 10px;
 background-color: white;
-}
-.gmail{
-  background-image: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia.idownloadblog.com%2Fwp-content%2Fuploads%2F2016%2F10%2F2000px-New_Logo_Gmail.svg_.png&f=1');
-  background-repeat: no-repeat;
-  background-size:240px 200px, contain;
-}
-.canvas{
-  background-image: url('https://lh3.ggpht.com/Enz_xjXLJ4IVLt8z59qQ9Zlg4AmBc_4wzzm6xgnCsIYX8nPAPteDSVc9dAgITtha_SUY=w300');
-  background-repeat: no-repeat;
-  background-size:240px 200px, contain;
-}
-.youtube{
-  background-image: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwvuimc.files.wordpress.com%2F2014%2F06%2Fyoutube.png&f=1');
-  background-repeat: no-repeat;
-  background-size:240px 200px, contain;
-}
-.netflix{
-  background-image: url('https://proxy.duckduckgo.com/iur/?f=1&image_host=http%3A%2F%2Fnerdophiles.files.wordpress.com%2F2013%2F11%2Fnetflix-logo.png&u=https://nerdophiles.files.wordpress.com/2013/11/netflix-logo.png');
-  background-repeat: no-repeat;
-  background-size:240px 200px, cover;
-}
-.twitter{
-  background-image: url('https://duckduckgo.com/i/669b3055.png');
-  background-repeat: no-repeat;
-  background-size:240px 200px, cover;
-}
-.amazon{
-  background-image: url('https://tamebay.com/wp-content/uploads/2017/02/amazon_logo.jpg');
-  background-repeat: no-repeat;
-  background-size:240px 200px, cover;
 }
 .tile-text{
   padding-top: 9px;
 }
-
-#clockbox{
-  text-align:center;
+.footer{
+  max-width: 90%;
 }
-@media only screen and (max-width: 530px) {
-	.search-bar{
+.gmail{
+  background-image: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia.idownloadblog.com%2Fwp-content%2Fuploads%2F2016%2F10%2F2000px-New_Logo_Gmail.svg_.png&f=1');
+  background-repeat: no-repeat;
+  background-size: var(--tile-image-width) var(--tile-image-height), contain;
+}
+.canvas{
+  background-image: url('https://lh3.ggpht.com/Enz_xjXLJ4IVLt8z59qQ9Zlg4AmBc_4wzzm6xgnCsIYX8nPAPteDSVc9dAgITtha_SUY=w300');
+  background-repeat: no-repeat;
+  background-size: var(--tile-image-width) var(--tile-image-height), contain;
+}
+.youtube{
+  background-image: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwvuimc.files.wordpress.com%2F2014%2F06%2Fyoutube.png&f=1');
+  background-repeat: no-repeat;
+  background-size: var(--tile-image-width) var(--tile-image-height), contain;
+}
+.netflix{
+  background-image: url('https://proxy.duckduckgo.com/iur/?f=1&image_host=http%3A%2F%2Fnerdophiles.files.wordpress.com%2F2013%2F11%2Fnetflix-logo.png&u=https://nerdophiles.files.wordpress.com/2013/11/netflix-logo.png');
+  background-repeat: no-repeat;
+  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+}
+.twitter{
+  background-image: url('https://duckduckgo.com/i/669b3055.png');
+  background-repeat: no-repeat;
+  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+}
+.amazon{
+  background-image: url('https://tamebay.com/wp-content/uploads/2017/02/amazon_logo.jpg');
+  background-repeat: no-repeat;
+  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+}
+
+@media only screen and (max-width: 354px) {
+  .search-bar{
+    width: 280px;
+  }
+  input{
+    width: 280px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  *{
+    --tile-width: 120px;
+    --tile-height: 120px;
+    --tile-image-width: 100px;
+    --tile-image-height: 70px;
+    --tile-margin: 5px;
+    --tile-margin: 6px;
+  }
+  .tiles{
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 371px) {
+  *{
+    --tile-width: 150px;
+    --tile-height: 140px;
+    --tile-image-width: 130px;
+    --tile-image-height: 90px;
+  }
+
+  header{
+    margin-top: var(--small-margins);
+  }
+  .search-bar{
     width: 320px;
   }
   input{
     width: 320px;
+  }
+  .tiles{
+    max-width: 100%;
+  }
+  .tile-wrap{
+  }
+}
+
+@media only screen and (min-width: 520px){
+  .search-bar{
+    width: 500px;
+  }
+  input{
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 730px){
+  .tiles{
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 915px){
+  .tiles{
+    max-width:55%;
+  }
+}
+@media only screen and (min-width: 1216px){
+  *{
+    --tile-width: 190px;
+    --tile-height: 180px;
+    --tile-image-width: 170px;
+    --tile-image-height: 130px;
+  }
+  .tiles{
+    max-width: 50%;
+  }
+}
+@media only screen and (min-width: 1250px){
+  .tiles{
+    max-width: 40%;
   }
 }
