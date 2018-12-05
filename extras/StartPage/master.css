@@ -62,6 +62,15 @@ input[type="submit"]:hover {
 h1{
 
 }
+.shadow{
+-webkit-box-shadow: 0px 10px 30px -15px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 30px -15px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 30px -15px rgba(0,0,0,0.75);
+}
+.shiftUp:hover{
+  position: relative;
+	top: -2px;
+}
 .hero {
   padding-top: 330px;
   font-size: 72px;
@@ -102,13 +111,13 @@ h1{
   margin-bottom: var(--tile-margin-bottom);
   width: var(--tile-width);
   height: var(--tile-height);
-  background-color: rgb(224, 224, 224);
+  background-color: #8EAEBD;
   display: inline-block;
   text-align: center;
   border-radius: 5px;
 }
 .tile-wrap:hover{
-box-shadow: 0px 0px 0px 6px #D3DFFF;
+box-shadow: 0px 0px 0px 6px #30415D;
 }
 .tile-image{
 width: var(--tile-image-width);
