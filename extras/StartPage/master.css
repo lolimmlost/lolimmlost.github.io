@@ -25,18 +25,16 @@
 body{
   max-width: 100%;
   display: block;
-  background-image: var(--bg);
-  background-size: 100vw;
+  background-image: var(--bg) ;
+  background-size: 100vw, cover;
   background-color: var(--bg-color);
+
 }
 /**************************
 Header and Clockbox
 **************************/
-header{
-  margin-top: var(--small-margins);
-}
 .hero {
-  padding-top: 330px;
+  padding-top: 4%;
   font-size: 72px;
 }
 /**************************
@@ -175,9 +173,8 @@ TILE LNKS
 /**************************
 Footer
 ***************************/
-span{
-  background-color: white;
-  height: 100%;
+p{
+  margin-top: 30px;
 }
 /**************************
 MEDIA QUERIES
