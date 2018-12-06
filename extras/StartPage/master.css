@@ -14,9 +14,10 @@
   --tile-image-height: 350px;
   --tile-margin: 20px;
   --tile-margin-bottom:25px;
-  --tile-color: #84989F;
+  --tile-color: #94b0b7;
   --text-color: #D5D4CF;
-  --bg-color: #F6F7FB;
+  --search-color:#ddddda;
+  --bg-color: #4a707a;
   --bg: url('2.jpg');
   --search-bar-width:76%;
   --hover-color: #D3DFFF;
@@ -25,14 +26,40 @@
 body{
   max-width: 100%;
   display: block;
-  background-image: var(--bg) ;
+  /*background-image: var(--bg) ;*/
   background-size: 100vw, cover;
   background-color: var(--bg-color);
-
 }
 /**************************
 Header and Clockbox
 **************************/
+.color-bar{
+  height: 12px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+.color-bar-item{
+  height: 10px;
+  width: 20%;
+}
+.c1{
+  background-color: #ddddda;
+}
+.c2{
+  background-color: #c2c8c5;
+}
+.c3{
+  background-color: #94b0b7;
+}
+.c4{
+  background-color: #7697a0;
+}
+.c5{
+  background-color: #4a707a;
+}
 .hero {
   padding-top: 4%;
   font-size: 72px;
@@ -58,7 +85,7 @@ Date and Time Date, Month - Day, Year, Time,
   height: 80px;
 }
 input {
-  background: var(--bg-color);
+  background: var(--search-color);
   width: 100%;
 }
 input[type="text"] {
@@ -86,7 +113,7 @@ Tile Set Up
   display: table;
   text-align: center;
   background-size: 100vw;
-  background-color: #E1E5EE;
+  /*background-color: #E1E5EE;*/
 }
 .tile-wrap{
   margin-left: var(--tile-margin);
