@@ -2,42 +2,96 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  /*Select Font*/
   font-family: 'Work Sans', sans-serif;
+<<<<<<< HEAD
   transition: all 0.3s ease-in-out;
   --transition-speed:0.3s;
+=======
+  transition: all 0.3s ease-out;
+  color: #02151B; /**/
+>>>>>>> origin/master
   --small-margins: 40px;
   --large-margins: 80px;
-  --tile-width: 200px;
-  --tile-height: 190px;
-  --tile-image-width: 180px;
-  --tile-image-height: 140px;
+  --tile-width: 350px;
+  --tile-height: 370px;
+  --tile-image-width: 330px;
+  --tile-image-height: 350px;
   --tile-margin: 20px;
   --tile-margin-bottom:25px;
+  --tile-color: #c2c8c5;
+  --text-color: #D5D4CF;
+  --search-color:#ddddda;
+  --bg-color: #4a707a;
+  --bg: url('2.jpg');
+  --search-bar-width:76%;
+  --hover-color: #D3DFFF;
 }
+/*Setup Body and Background*/
 body{
   max-width: 100%;
   display: block;
+  /*background-image: var(--bg) ;*/
+  background-size: 100vw, cover;
+  background-color: var(--bg-color);
 }
-
-a{
-  font-size: 18px;
-  color: black;
-  margin: 0;
-  padding: 0;
+/**************************
+Header and Clockbox
+**************************/
+.color-bar{
+  height: 12px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
 }
-a.link{
-  display: inline-block;
+.color-bar-item{
+  height: 10px;
+  width: 20%;
 }
-
-header{
-  margin-top: var(--small-margins);
+.c1{
+  background-color: #ddddda;
 }
+.c2{
+  background-color: #c2c8c5;
+}
+.c3{
+  background-color: #94b0b7;
+}
+.c4{
+  background-color: #7697a0;
+}
+.c5{
+  background-color: #4a707a;
+}
+.hero {
+  padding-top: 4%;
+  font-size: 72px;
+}
+/**************************
+Date and Time Date, Month - Day, Year, Time,
+**************************/
 #clockbox{
   text-align:center;
+  font-size: 32px;
+}
+.search{
+  text-align: center;
+  align-items: center;
+  margin: var(--small-margins) auto;
+}
+.search-bar:hover{
+  box-shadow: 0px 0px 0px 6px var(--hover-color);
+}
+.search-bar{
+  margin: 0 auto;
+  width: var(--search-bar-width);
+  height: 80px;
 }
 input {
-  background: #fff;
-  width:500px;
+  background: var(--search-color);
+  width: 100%;
 }
 input[type="text"] {
   height: 40px;
@@ -54,50 +108,35 @@ input[type="submit"] {
 input[type="submit"]:hover {
   opacity: 0.8;
 }
-.search{
-  text-align: center;
-  align-items: center;
-  margin: var(--small-margins) auto;
-}
-.search-bar:hover{
-  box-shadow: 0px 0px 0px 6px #D3DFFF;
-}
-.search-bar{
-  margin: 0 auto;
-  width: 500px;
-  height: 80px;
-
-}
+/**************************
+Tile Set Up
+**************************/
 .tiles{
-  max-width:80%;
-  margin-top: 20px;
+  max-width: var(--search-bar-width);
+  padding-top: 20px;
+  padding-right: 20px;
   display: table;
   text-align: center;
-}
-.tiles:after{
-  content: "";
-  display: inline-block;
-  width: 100%;
-}
-.link{
-  width: var(--tile-width) +1;
-  height: var(--tile-height)+1;
-  text-decoration: none;
-  padding: 0;
-  margin:0;
+  background-size: 100vw;
+  /*background-color: #E1E5EE;*/
 }
 .tile-wrap{
   margin-left: var(--tile-margin);
   margin-bottom: var(--tile-margin-bottom);
   width: var(--tile-width);
   height: var(--tile-height);
-  background-color: rgb(224, 224, 224);
+  background-color: var(--tile-color);
   display: inline-block;
   text-align: center;
   border-radius: 5px;
 }
 .tile-wrap:hover{
-box-shadow: 0px 0px 0px 6px #D3DFFF;
+  box-shadow: 0px 0px 0px 6px var(--hover-color);
+}
+.tiles:after{
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 .tile-image{
 width: var(--tile-image-width);
@@ -108,10 +147,32 @@ transition: width var(--transition-speed) ease-in-out;
 }
 .tile-text{
   padding-top: 9px;
+  color: black;
 }
-.footer{
-  max-width: 90%;
+.link{
+  width: var(--tile-width) +1;
+  height: var(--tile-height)+1;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+  margin:0;
+  font-size: 18px;
 }
+/**************************
+Shadows and Animations
+***************************/
+.shadow{
+-webkit-box-shadow: 0px 10px 30px -15px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 30px -15px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 30px -15px rgba(0,0,0,0.75);
+}
+.shiftUp:hover{
+  position: relative;
+	top: -2px;
+}
+/**************************
+TILE LNKS
+***************************/
 .gmail{
   background-image: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia.idownloadblog.com%2Fwp-content%2Fuploads%2F2016%2F10%2F2000px-New_Logo_Gmail.svg_.png&f=1');
   background-repeat: no-repeat;
@@ -142,7 +203,15 @@ transition: width var(--transition-speed) ease-in-out;
   background-repeat: no-repeat;
   background-size: var(--tile-image-width) var(--tile-image-height), cover;
 }
-
+/**************************
+Footer
+***************************/
+p{
+  margin-top: 30px;
+}
+/**************************
+MEDIA QUERIES
+***************************/
 @media only screen and (max-width: 354px) {
   .search-bar{
     width: 280px;
@@ -160,6 +229,7 @@ transition: width var(--transition-speed) ease-in-out;
     --tile-margin: 5px;
     --tile-margin: 6px;
   }
+
   .tiles{
     max-width: 100%;
   }
@@ -175,12 +245,6 @@ transition: width var(--transition-speed) ease-in-out;
   header{
     margin-top: var(--small-margins);
   }
-  .search-bar{
-    width: 320px;
-  }
-  input{
-    width: 320px;
-  }
   .tiles{
     max-width: 100%;
   }
@@ -189,37 +253,33 @@ transition: width var(--transition-speed) ease-in-out;
 }
 
 @media only screen and (min-width: 520px){
-  .search-bar{
-    width: 500px;
-  }
-  input{
-    width: 500px;
-  }
+
 }
 
 @media only screen and (min-width: 730px){
   .tiles{
     max-width: 70%;
   }
+
 }
 @media only screen and (min-width: 915px){
   .tiles{
-    max-width:55%;
+    max-width:60%;
   }
 }
 @media only screen and (min-width: 1216px){
   *{
-    --tile-width: 190px;
-    --tile-height: 180px;
-    --tile-image-width: 170px;
-    --tile-image-height: 130px;
+    --tile-width: 200px;
+    --tile-height: 190px;
+    --tile-image-width: 180px;
+    --tile-image-height: 140px;
   }
   .tiles{
-    max-width: 50%;
+    max-width: 60%;
   }
 }
 @media only screen and (min-width: 1250px){
   .tiles{
-    max-width: 40%;
+    max-width: 76%;
   }
 }
