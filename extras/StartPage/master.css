@@ -29,7 +29,7 @@ body{
   display: block;
   /*background-image: var(--bg) ;*/
   background-size: 100vw, cover;
-  background-color: var(--bg-color);
+  background-color: white;
 }
 /**************************
 Header and Clockbox
