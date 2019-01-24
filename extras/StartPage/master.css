@@ -20,7 +20,7 @@
   --search-color:#c2c8c5;
   --bg-color: #4a707a;
   --bg: url('2.jpg');
-  --search-bar-width:76%;
+  --search-bar-width:80%;
   --hover-color: #D3DFFF;
 }
 /*Setup Body and Background*/
@@ -142,7 +142,7 @@ margin-top: 10px;
 transition: width var(--transition-speed) ease-in-out;
 }
 .tile-text{
-  padding-top: 0px;
+  padding-bottom: 4px;
   color: black;
 }
 .link{
@@ -152,7 +152,7 @@ transition: width var(--transition-speed) ease-in-out;
   display: inline-block;
   padding: 0;
   margin:0;
-  font-size: 18px;
+  font-size: 16px;
 }
 /**************************
 Shadows and Animations
