@@ -7,14 +7,14 @@
   transition: all 0.3s ease-in-out;
   --transition-speed:0.3s;
   color: #02151B; /**/
-  --small-margins: 40px;
-  --large-margins: 80px;
-  --tile-width: 300px;
-  --tile-height: 320px;
-  --tile-image-width: 280px;
-  --tile-image-height: 300px;
-  --tile-margin: 20px;
-  --tile-margin-bottom:25px;
+  --small-margins: 24px;
+  --large-margins: 56px;
+  --tile-width: 120px;
+  --tile-height: 120px;
+  --tile-image-width: 100px;
+  --tile-image-height: 100px;
+  --tile-margin: 12px;
+  --tile-margin-bottom:10px;
   --tile-color: #c2c8c5;
   --text-color: #D5D4CF;
   --search-color:#c2c8c5;
@@ -63,14 +63,14 @@ Header and Clockbox
 }
 .hero {
   padding-top: 4%;
-  font-size: 72px;
+  font-size: 48px;
 }
 /**************************
 Date and Time Date, Month - Day, Year, Time,
 **************************/
 #clockbox{
   text-align:center;
-  font-size: 32px;
+  font-size: 24px;
 }
 .search{
   text-align: center;
@@ -109,16 +109,16 @@ Tile Set Up
 **************************/
 .tiles{
   max-width: var(--search-bar-width);
-  padding-top: 20px;
-  padding-right: 20px;
+  margin: 0 auto;
   display: table;
   text-align: center;
   background-size: 100vw;
   /*background-color: #E1E5EE;*/
 }
 .tile-wrap{
-  margin-left: var(--tile-margin);
   margin-bottom: var(--tile-margin-bottom);
+  padding-bottom: 12px;
+  margin-right: 10px;
   width: var(--tile-width);
   height: var(--tile-height);
   background-color: var(--tile-color);
@@ -142,7 +142,7 @@ margin-top: 10px;
 transition: width var(--transition-speed) ease-in-out;
 }
 .tile-text{
-  padding-top: 9px;
+  padding-top: 0px;
   color: black;
 }
 .link{
@@ -212,7 +212,7 @@ p{
 }
 /**************************
 MEDIA QUERIES
-***************************/
+
 @media only screen and (max-width: 354px) {
   .search-bar{
     width: 280px;
@@ -284,3 +284,4 @@ MEDIA QUERIES
     max-width: 76%;
   }
 }
+***************************/
