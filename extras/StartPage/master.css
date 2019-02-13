@@ -3,19 +3,19 @@
   padding: 0;
   text-align: center;
   /*Select Font*/
-  font-family: 'Work Sans', sans-serif;
+  font-family: Helvetica, sans-serif;
   transition: all 0.3s ease-in-out;
   --transition-speed:0.3s;
   color: #02151B; /**/
   --small-margins: 24px;
   --large-margins: 56px;
-  --tile-width: 120px;
-  --tile-height: 120px;
-  --tile-image-width: 100px;
-  --tile-image-height: 100px;
-  --tile-margin: 12px;
-  --tile-margin-bottom:10px;
-  --tile-color: #c2c8c5;
+  --tile-width: 128px;
+  --tile-height: 160px;
+  --tile-image-width: 128px;
+  --tile-image-height: 128px;
+  --tile-margin: .5rem;
+  --tile-margin-bottom:1rem;
+  --tile-color: rgba(0, 0, 0, 0.0);
   --text-color: #D5D4CF;
   --search-color:#c2c8c5;
   --bg-color: #4a707a;
@@ -63,14 +63,14 @@ Header and Clockbox
 }
 .hero {
   padding-top: 4%;
-  font-size: 48px;
+}
+.tagline{
 }
 /**************************
 Date and Time Date, Month - Day, Year, Time,
 **************************/
 #clockbox{
   text-align:center;
-  font-size: 24px;
 }
 .search{
   text-align: center;
@@ -93,12 +93,11 @@ input[type="text"] {
   height: 40px;
   border: none;
   border-bottom: 1px solid rgb(70, 100, 70);
-  font-size: 18px;
 }
 input[type="submit"] {
   height: 40px;
   border: none;
-  font-size: 18px;
+
   transition: opacity var(--transition-speed) ease;
 }
 input[type="submit"]:hover {
