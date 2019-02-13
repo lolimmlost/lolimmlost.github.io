@@ -62,9 +62,11 @@ Header and Clockbox
   background-color: #4a707a;
 }
 .hero {
-  padding-top: 4%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 .tagline{
+    padding-bottom: 1rem;
 }
 /**************************
 Date and Time Date, Month - Day, Year, Time,
@@ -113,6 +115,9 @@ Tile Set Up
   text-align: center;
   background-size: 100vw;
   /*background-color: #E1E5EE;*/
+}
+.tiles h3{
+    margin-bottom: 1rem;
 }
 .tile-wrap{
   margin-bottom: var(--tile-margin-bottom);
