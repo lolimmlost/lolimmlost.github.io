@@ -68,12 +68,15 @@ Header and Clockbox
 }
 
 .hero {
+  padding-bottom: 0;
+  margin: 0;
   padding-top: 4rem;
-  padding-bottom: 1rem;
+  font-size: 3rem;
 }
 
 .tagline {
   padding-bottom: 1rem;
+  margin: 0;
 }
 
 /**************************
@@ -109,6 +112,7 @@ input[type="text"] {
   height: 40px;
   border: none;
   border-bottom: 1px solid black;
+  /* Separating line between seatch and button*/
 }
 
 input[type="submit"] {
@@ -126,6 +130,7 @@ Tile Set Up
 .tiles {
   max-width: var(--search-bar-width);
   margin: 0 auto;
+  margin-bottom: 2rem;
   display: table;
   text-align: center;
   padding: 0;
@@ -133,7 +138,7 @@ Tile Set Up
 }
 
 .tiles h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .tile-bottom-margin {
@@ -182,9 +187,7 @@ Tile Set Up
   margin: 0;
 }
 
-.last {
-  padding-bottom: 0;
-}
+.last {}
 
 /**************************
 Shadows and Animations
@@ -253,6 +256,12 @@ TILE LNKS
 
 .reddit {
   background-image: url('img/reddit.png');
+  background-repeat: no-repeat;
+  background-size: var(--tile-image-width) var(--tile-image-width), cover;
+}
+
+.instagram {
+  background-image: url('img/instagram.png');
   background-repeat: no-repeat;
   background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
