@@ -17,10 +17,10 @@
   --tile-margin-bottom:1rem;
   --tile-color: none;
   --text-color: #D5D4CF;
-  --search-color:#c2c8c5;
+  --search-color:#ffff;
   --bg-color: #4a707a;
   --bg: url('img/2.jpg');
-  --search-bar-width:80%;
+  --search-bar-width:60%;
   --hover-color: #D3DFFF;
 }
 /*Setup Body and Background*/
@@ -62,7 +62,7 @@ Header and Clockbox
   background-color: #4a707a;
 }
 .hero {
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 1rem;
 }
 .tagline{
@@ -160,9 +160,9 @@ margin-top: 32px;
 Shadows and Animations
 ***************************/
 .shadow{
--webkit-box-shadow: 0px 10px 30px -15px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 10px 30px -15px rgba(0,0,0,0.75);
-box-shadow: 0px 10px 30px -15px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 10px 30px -20px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 30px -20px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 30px -20px rgba(0,0,0,0.75);
 }
 .shiftUp:hover{
   position: relative;
@@ -203,6 +203,26 @@ TILE LNKS
 }
 .amazon{
   background-image: url('img/amazon.png');
+  background-repeat: no-repeat;
+  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+}
+.twitch{
+  background-image: url('img/twitch.png');
+  background-repeat: no-repeat;
+  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+}
+.reddit{
+  background-image: url('img/reddit.png');
+  background-repeat: no-repeat;
+  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+}
+.github{
+  background-image: url('img/github.png');
+  background-repeat: no-repeat;
+  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+}
+.dribble{
+  background-image: url('img/dribble.png');
   background-repeat: no-repeat;
   background-size: var(--tile-image-width) var(--tile-image-height), cover;
 }
