@@ -1,42 +1,39 @@
 * {
-  margin: 0 auto;
-  padding: 0;
   text-align: center;
   /*Select Font*/
   font-family: Helvetica, sans-serif;
   transition: all 0.3s ease-in-out;
   --transition-speed: 0.3s;
-  color: #02151B; /**/
   --small-margins: 2rem;
-  --large-margins: 4rem;
-  --tile-width: 128px;
-  --tile-height: 128px;
-  --tile-image-width: 64px;
-  --tile-image-height: 64px;
-  --tile-margin: .5rem;
-  --tile-margin-bottom:1.5rem;
+  --large-margins: 6rem;
+  --tile-width: 8rem;
+  --tile-image-width: 4rem;
+  --tile-margin: 1rem;
+  --tile-margin-bottom: 1.3rem;
   --tile-color: white;
   --text-color: #D5D4CF;
-  --search-color:#ffff;
+  --search-color: #ffff;
   --bg-color: #4a707a;
   --bg: url('img/2.jpg');
-  --search-bar-width:60%;
+  --search-bar-width: 60%;
   --hover-color: #D3DFFF;
 }
+
 /*Setup Body and Background*/
-body{
+body {
   max-width: 100%;
   display: block;
-  background-image: var(--bg) ;
+  background-image: var(--bg);
   background-size: 100vw, cover, no-repeat;
   background-color: white;
   margin: 0;
   padding: 0;
 }
+
 /**************************
 Header and Clockbox
 **************************/
-.color-bar{
+.color-bar {
   height: 12px;
   display: flex;
   position: fixed;
@@ -44,72 +41,89 @@ Header and Clockbox
   top: 0;
   right: 0;
 }
-.color-bar-item{
+
+.color-bar-item {
   height: 10px;
   width: 20%;
 }
-.c1{
+
+.c1 {
   background-color: #ddddda;
 }
-.c2{
+
+.c2 {
   background-color: #c2c8c5;
 }
-.c3{
+
+.c3 {
   background-color: #94b0b7;
 }
-.c4{
+
+.c4 {
   background-color: #7697a0;
 }
-.c5{
+
+.c5 {
   background-color: #4a707a;
 }
+
 .hero {
   padding-top: 4rem;
   padding-bottom: 1rem;
 }
-.tagline{
-    padding-bottom: 1rem;
+
+.tagline {
+  padding-bottom: 1rem;
 }
+
 /**************************
 Date and Time Date, Month - Day, Year, Time,
 **************************/
-#clockbox{
-  text-align:center;
+#clockbox {
+  text-align: center;
 }
-.search{
+
+.search {
   text-align: center;
   align-items: center;
   margin: var(--small-margins) auto;
 }
-.search-bar:hover{
+
+.search-bar:hover {
   box-shadow: 0px 0px 0px 6px var(--hover-color);
 }
-.search-bar{
+
+.search-bar {
   margin: 0 auto;
   width: var(--search-bar-width);
   height: 80px;
 }
+
 input {
   background: var(--search-color);
   width: 100%;
-  border:none;
+  border: none;
 }
+
 input[type="text"] {
   height: 40px;
   border: none;
   border-bottom: 1px solid black;
 }
+
 input[type="submit"] {
   height: 40px;
   transition: opacity var(--transition-speed) ease;
 }
+
 input[type="submit"]:hover {
   opacity: 0.8;
 }
+
 /**************************
 Tile Set Up
 **************************/
-.tiles{
+.tiles {
   max-width: var(--search-bar-width);
   margin: 0 auto;
   display: table;
@@ -117,152 +131,170 @@ Tile Set Up
   padding: 0;
   /*background-color: #E1E5EE;*/
 }
-.tiles h3{
-    margin-bottom: 1rem;
+
+.tiles h3 {
+  margin-bottom: 1rem;
 }
-.tile-bottom-margin{
-    padding-bottom: 1rem;
+
+.tile-bottom-margin {
+  padding-bottom: 1rem;
 }
-.tile-wrap{
+
+.tile-wrap {
   margin-bottom: var(--tile-margin-bottom);
-  margin-right: 1rem;
+  margin-right: var(--tile-margin);
   width: var(--tile-width);
-  height: var(--tile-height);
+  height: var(--tile-width);
   background-color: var(--tile-color);
   display: inline-block;
   text-align: center;
   border-radius: 96px;
 }
-.tile-wrap:hover{
+
+.tile-wrap:hover {
   box-shadow: 0px 0px 0px 6px var(--hover-color);
   border-radius: 96px;
 }
-.tiles:after{
+
+.tiles:after {
   content: "";
   display: inline-block;
   width: 100%;
 }
-.tile-image{
+
+.tile-image {
   width: var(--tile-image-width);
-  height: var(--tile-image-height);
+  height: var(--tile-image-width);
   margin: 0 auto;
   margin-top: 32px;
 }
-.tile-text{
+
+.tile-text {
   color: black;
 }
-.link{
+
+.link {
   width: var(--tile-width) +1;
-  height: var(--tile-height)+1;
+  height: var(--tile-width)+1;
   text-decoration: none;
   display: inline-block;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
-.last{
-    padding-bottom: 0;
+
+.last {
+  padding-bottom: 0;
 }
+
 /**************************
 Shadows and Animations
 ***************************/
-.shadow{
-  -webkit-box-shadow: 0px 10px 30px -20px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 10px 30px -20px rgba(0,0,0,0.75);
-  box-shadow: 0px 10px 30px -20px rgba(0,0,0,0.75);
+.shadow {
+  -webkit-box-shadow: 0px 10px 30px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 30px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 30px -20px rgba(0, 0, 0, 0.75);
 }
-.shiftUp:hover{
+
+.shiftUp:hover {
   position: relative;
-	top: -2px;
+  top: -2px;
 }
+
 /**************************
 TILE LNKS
 ***************************/
-.gmail{
+.gmail {
   background-image: url('img/gmail.png');
   background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-height), contain, cover ;
+  background-size: var(--tile-image-width) var(--tile-image-width), contain, cover;
 }
-.canvas{
+
+.canvas {
   background-image: url('https://lh3.ggpht.com/Enz_xjXLJ4IVLt8z59qQ9Zlg4AmBc_4wzzm6xgnCsIYX8nPAPteDSVc9dAgITtha_SUY=w300');
   background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-height), contain;
+  background-size: var(--tile-image-width) var(--tile-image-width), contain;
 }
-.soundcloud{
+
+.soundcloud {
   background-image: url('img/soundcloud.png');
   background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-height), contain;
+  background-size: var(--tile-image-width) var(--tile-image-width), contain;
 }
-.youtube{
+
+.youtube {
   background-image: url('img/youtube.png');
   background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-height), contain;
+  background-size: var(--tile-image-width) var(--tile-image-width), contain;
 }
-.netflix{
+
+.netflix {
   background-image: url('img/netflix.png');
   background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
-.twitter{
+
+.twitter {
   background-image: url('img/twitter.png');
   background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
-.amazon{
+
+.amazon {
   background-image: url('img/amazon.png');
   background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
-.twitch{
+
+.twitch {
   background-image: url('img/twitch.png');
   background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
-.reddit{
+
+.reddit {
   background-image: url('img/reddit.png');
   background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
-.github{
+
+.github {
   background-image: url('img/github.png');
   background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
-.dribble{
+
+.dribble {
   background-image: url('img/dribble.png');
   background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-height), cover;
+  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
+
 /**************************
 Footer
 ***************************/
-.footer{
+.footer {
   padding-top: .1rem;
   width: 100%;
   position: fixed;
   background-color: white;
   bottom: 0;
 }
-p{
+
+p {
   font-size: .8rem;
   color: black;
   padding-top: 16px;
   margin: 0;
 }
-.footer div{
+
+.footer div {
   height: 56px;
   text-align: center !important;
 }
-/**************************
-MEDIA QUERIES
 
-@media only screen and (max-width: 354px) {
-  .search-bar{
-    width: 280px;
-  }
-  input{
-    width: 280px;
-  }
-}
+@media only screen and (max-width: 319px) {}
+
+/**************************
 @media only screen and (max-width: 370px) {
   *{
     --tile-width: 120px;
