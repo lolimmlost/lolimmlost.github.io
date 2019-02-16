@@ -299,7 +299,7 @@ p {
   }
 
   .tiles {
-    max-width: 100%;
+    max-width: 80%;
   }
 
   .tile-wrap {
@@ -341,7 +341,7 @@ p {
   }
 
   .tiles {
-    max-width: 80%;
+    max-width: 70%;
   }
 
   .tile-wrap {
@@ -379,13 +379,27 @@ p {
     padding-bottom: 1rem;
     margin: 0;
   }
-}
 
+  .tile-wrap {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  }
+
+  .tile-image {
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem 0 0 2rem;
+    background-size: 4rem 4rem, contain, cover;
+  }
+}
+/***
 @media only screen and (min-width: 915px) {
 }
 
 @media only screen and (min-width: 1216px) {}
-  /* Desktops and laptops ----------- */
+  /* Desktops and laptops -----------
 @media only screen  and (min-width : 1224px) {
 
   }
@@ -400,3 +414,4 @@ p {
     height: ;
   }
 }
+****/
