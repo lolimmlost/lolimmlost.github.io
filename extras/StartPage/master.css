@@ -126,7 +126,7 @@ input[type="submit"]:hover {
 Tile Set Up
 **************************/
 .tiles {
-  max-width: 60%;
+  max-width: 100%;
   margin: 0 auto;
   margin-bottom: 2rem;
   display: table;
@@ -279,9 +279,80 @@ p {
   height: 56px;
   text-align: center !important;
 }
+@media only screen and (max-width: 230px) {
+  .hero {
+    padding-bottom: 0;
+    margin: 0;
+    padding-top: 4rem;
+    font-size: 2rem;
+  }
 
+  .tagline {
+    padding-bottom: 1rem;
+    margin: 0;
+  }
 
-@media only screen and (max-width: 319px){
+  .search-bar, .tiles {
+    width: 100%;
+  }
+.tiles{
+  width: 100%;
+}
+
+  .tile-wrap {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .tile-image {
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem 0 0 .5rem;
+    background-size: 2.5rem 2.5rem, contain, cover;
+  }
+
+  .link {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+@media only screen and (min-width: 231px) {
+  .hero {
+    padding-bottom: 0;
+    margin: 0;
+    padding-top: 4rem;
+    font-size: 2rem;
+  }
+
+  .tagline {
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  .search-bar, .tiles {
+    width: 100%;
+  }
+
+  .tile-wrap {
+    width: 4rem;
+    height: 4rem;
+    margin: .5rem 0 0 .5rem;
+  }
+
+  .tile-image {
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem 0 0 .5rem;
+    background-size: 2.5rem 2.5rem, contain, cover;
+  }
+
+  .link {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) {
   .hero {
     padding-bottom: 0;
     margin: 0;
@@ -296,10 +367,6 @@ p {
 
   .search-bar, .tiles {
     width: 90%;
-  }
-
-  .tiles {
-    max-width: 90%;
   }
 
   .tile-wrap {
@@ -319,11 +386,8 @@ p {
     max-height: 100%;
   }
 }
-/****
-@media only screen and (min-width: 320px) {}
-}
-***/
-@media only screen and (min-width: 320px) {
+
+@media only screen and (min-width: 340px) {
   .hero {
     padding-bottom: 0;
     margin: 0;
@@ -338,6 +402,43 @@ p {
 
   .search-bar, .tiles {
     width: 80%;
+  }
+
+  .tile-wrap {
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem 0 0 .5rem;
+  }
+
+  .tile-image {
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem 0 0 .5rem;
+    background-size: 2.5rem 2.5rem, contain, cover;
+  }
+
+  .link {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+}
+
+@media only screen and (min-width: 360px) {
+  .hero {
+    padding-bottom: 0;
+    margin: 0;
+    padding-top: 4rem;
+    font-size: 2rem;
+  }
+
+  .tagline {
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  .search-bar, .tiles {
+    width: 86%;
   }
 
   .tiles {
@@ -394,6 +495,7 @@ p {
     background-size: 4rem 4rem, contain, cover;
   }
 }
+
 /***
 @media only screen and (min-width: 915px) {
 }
