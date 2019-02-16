@@ -82,9 +82,7 @@ Header and Clockbox
 /**************************
 Date and Time Date, Month - Day, Year, Time,
 **************************/
-#clockbox {
-  text-align: center;
-}
+#clockbox {}
 
 .search {
   text-align: center;
@@ -92,14 +90,14 @@ Date and Time Date, Month - Day, Year, Time,
   margin: var(--small-margins) auto;
 }
 
-.search-bar:hover {
-  box-shadow: 0px 0px 0px 6px var(--hover-color);
-}
-
 .search-bar {
   margin: 0 auto;
-  width: var(--search-bar-width);
+  width: 60%;
   height: 80px;
+}
+
+.search-bar:hover {
+  box-shadow: 0px 0px 0px 6px var(--hover-color);
 }
 
 input {
@@ -128,7 +126,7 @@ input[type="submit"]:hover {
 Tile Set Up
 **************************/
 .tiles {
-  max-width: var(--search-bar-width);
+  max-width: 60%;
   margin: 0 auto;
   margin-bottom: 2rem;
   display: table;
@@ -148,8 +146,9 @@ Tile Set Up
 .tile-wrap {
   margin-bottom: var(--tile-margin-bottom);
   margin-right: var(--tile-margin);
-  width: var(--tile-width);
-  height: var(--tile-width);
+  /*Tile properties*/
+  width: 8rem;
+  height: 8rem;
   background-color: var(--tile-color);
   display: inline-block;
   text-align: center;
@@ -168,10 +167,13 @@ Tile Set Up
 }
 
 .tile-image {
-  width: var(--tile-image-width);
-  height: var(--tile-image-width);
+  width: 4rem;
+  height: 4rem;
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 2rem;
+  background-size: 4rem 4rem, contain, cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .tile-text {
@@ -179,8 +181,9 @@ Tile Set Up
 }
 
 .link {
-  width: var(--tile-width) +1;
-  height: var(--tile-width)+1;
+  /*Link properties*/
+  width: 4rem +1;
+  height: 4rem +1;
   text-decoration: none;
   display: inline-block;
   padding: 0;
@@ -208,74 +211,50 @@ TILE LNKS
 ***************************/
 .gmail {
   background-image: url('img/gmail.png');
-  background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-width), contain, cover;
 }
 
 .canvas {
   background-image: url('https://lh3.ggpht.com/Enz_xjXLJ4IVLt8z59qQ9Zlg4AmBc_4wzzm6xgnCsIYX8nPAPteDSVc9dAgITtha_SUY=w300');
-  background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-width), contain;
 }
 
 .soundcloud {
   background-image: url('img/soundcloud.png');
-  background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-width), contain;
 }
 
 .youtube {
   background-image: url('img/youtube.png');
-  background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-width), contain;
 }
 
 .netflix {
   background-image: url('img/netflix.png');
-  background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
 
 .twitter {
   background-image: url('img/twitter.png');
-  background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
 
 .amazon {
   background-image: url('img/amazon.png');
-  background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
 
 .twitch {
   background-image: url('img/twitch.png');
-  background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
 
 .reddit {
   background-image: url('img/reddit.png');
-  background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
 
 .instagram {
   background-image: url('img/instagram.png');
-  background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
 
 .github {
   background-image: url('img/github.png');
-  background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
 
 .dribble {
   background-image: url('img/dribble.png');
-  background-repeat: no-repeat;
-  background-size: var(--tile-image-width) var(--tile-image-width), cover;
 }
 
 /**************************
@@ -301,70 +280,123 @@ p {
   text-align: center !important;
 }
 
-@media only screen and (max-width: 319px) {}
+
+@media only screen and (max-width: 319px){
+  .hero {
+    padding-bottom: 0;
+    margin: 0;
+    padding-top: 4rem;
+    font-size: 2rem;
+  }
+
+  .tagline {
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  .search-bar, .tiles {
+    width: 90%;
+  }
+
+  .tiles {
+    max-width: 100%;
+  }
+
+  .tile-wrap {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .tile-image {
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem 0 0 .5rem;
+    background-size: 2.5rem 2.5rem, contain, cover;
+  }
+
+  .link {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+/****
+@media only screen and (min-width: 320px) {}
+}
+***/
+@media only screen and (min-width: 320px) {
+  .hero {
+    padding-bottom: 0;
+    margin: 0;
+    padding-top: 4rem;
+    font-size: 2rem;
+  }
+
+  .tagline {
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  .search-bar, .tiles {
+    width: 90%;
+  }
+
+  .tiles {
+    max-width: 80%;
+  }
+
+  .tile-wrap {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .tile-image {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem 0 0 1rem;
+    background-size: 3rem 3rem, contain, cover;
+  }
+
+  .link {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
 
 /**************************
-@media only screen and (max-width: 370px) {
-  *{
-    --tile-width: 120px;
-    --tile-height: 120px;
-    --tile-image-width: 100px;
-    --tile-image-height: 70px;
-    --tile-margin: 5px;
-    --tile-margin: 6px;
-  }
-
-  .tiles{
-    max-width: 100%;
-  }
-}
-@media only screen and (min-width: 371px) {
-  *{
-    --tile-width: 150px;
-    --tile-height: 140px;
-    --tile-image-width: 130px;
-    --tile-image-height: 90px;
-  }
-
-  header{
-    margin-top: var(--small-margins);
-  }
-  .tiles{
-    max-width: 100%;
-  }
-  .tile-wrap{
-  }
-}
-
 @media only screen and (min-width: 520px){
 
 }
-
-@media only screen and (min-width: 730px){
-  .tiles{
-    max-width: 70%;
-  }
-
-}
-@media only screen and (min-width: 915px){
-  .tiles{
-    max-width:60%;
-  }
-}
-@media only screen and (min-width: 1216px){
-  *{
-    --tile-width: 200px;
-    --tile-height: 190px;
-    --tile-image-width: 180px;
-    --tile-image-height: 140px;
-  }
-  .tiles{
-    max-width: 60%;
-  }
-}
-@media only screen and (min-width: 1250px){
-  .tiles{
-    max-width: 76%;
-  }
-}
 ***************************/
+@media only screen and (min-width: 730px) {
+  .hero {
+    padding-bottom: 0;
+    margin: 0;
+    padding-top: 4rem;
+    font-size: 3rem;
+  }
+
+  .tagline {
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 915px) {
+}
+
+@media only screen and (min-width: 1216px) {}
+  /* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+  }
+@media only screen and (min-width: 1250px) {
+  .tile-wrap {
+    width: ;
+    height: ;
+  }
+
+  .link {
+    width: ;
+    height: ;
+  }
+}
