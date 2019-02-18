@@ -279,6 +279,7 @@ p {
   height: 56px;
   text-align: center !important;
 }
+
 @media only screen and (max-width: 230px) {
   .hero {
     padding-bottom: 0;
@@ -295,9 +296,10 @@ p {
   .search-bar, .tiles {
     width: 100%;
   }
-.tiles{
-  width: 100%;
-}
+
+  .tiles {
+    width: 100%;
+  }
 
   .tile-wrap {
     width: 4rem;
@@ -316,6 +318,7 @@ p {
     max-height: 100%;
   }
 }
+
 @media only screen and (min-width: 231px) {
   .hero {
     padding-bottom: 0;

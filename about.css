@@ -26,38 +26,7 @@
 }
 
 h1 {
-  font-family: 'Heebo', serif;
-  font-size: 50px;
-}
-
-h2 {
-  font-family: 'Heebo', serif;
-  font-size: 46px;
-}
-
-h3 {
-  font-family: 'Heebo', serif;
-  font-size: 38px;
-}
-
-h4 {
-  font-family: 'Heebo', serif;
-  font-size: 22px;
-}
-
-h5 {
-  font-family: 'Hseebo', serif;
-  font-size: 18px;
-}
-
-p {
-  font-family: 'Heebo', serif;
-  font-size: 24px;
-}
-
-p.small {
-  font-family: 'Heebo', serif;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .musicSection {
@@ -94,8 +63,9 @@ section {
   padding-bottom: 40px;
   margin: 0 auto;
 }
-section p em {
-}
+
+section p em {}
+
 .section-border {
   border-bottom: 1px grey solid;
 }
@@ -105,7 +75,6 @@ section p em {
 }
 
 .aboutStyle {}
-
 
 .links {
   font-family: 'Heebo';
@@ -199,7 +168,7 @@ p {
 
 .landing-page h1 {
   font-family: 'Archivo Black', cursive;
-  font-size: 56px;
+  font-size: 3rem;
   text-align: left;
   text-shadow: -4px 4px white;
   color: var(--main-color);
@@ -289,28 +258,6 @@ p {
   display: none;
 }
 
-.html-logo {
-  width: 64px;
-  height: 64px;
-  position: absolute;
-  margin-left: 400px;
-  margin-top: 20px;
-  background: url(https://raw.githubusercontent.com/lolimmlost/lolimmlost.github.io/master/img/html5.svg) center;
-  background-size: 64px 64px;
-  display: none;
-}
-
-.css-logo {
-  width: 64px;
-  height: 64px;
-  position: absolute;
-  margin-left: 470px;
-  margin-top: 20px;
-  background: url(https://raw.githubusercontent.com/lolimmlost/lolimmlost.github.io/master/img/css3.svg) center;
-  background-size: 64px 64px;
-  display: none;
-}
-
 .soundcloudd {
   padding-bottom: 30px;
   flex-direction: column;
@@ -350,7 +297,6 @@ p {
 }
 
 /* big buttons, no circle */
-
 .flickity-prev-next-button {
   width: 60px;
   height: 60px;
@@ -362,7 +308,6 @@ p {
 }
 
 /* arrow color */
-
 .flickity-prev-next-button .arrow {
   fill: white;
 }
@@ -372,7 +317,6 @@ p {
 }
 
 /* hide disabled button */
-
 .flickity-prev-next-button:disabled {
   display: none;
 }
@@ -430,9 +374,11 @@ i.fa:hover {
   0% {
     opacity: 0;
   }
+
   75% {
     transform: translateX(-400px);
   }
+
   100% {
     transform: translateX(-350px);
   }
@@ -440,40 +386,51 @@ i.fa:hover {
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .landing-page h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
+
   .landing-page {
     padding-top: 30px;
     padding-left: 40px;
   }
+
   .links {
     font-size: 28px;
   }
+
   a p {
     margin-top: 40px;
     margin-bottom: 20px;
   }
+
   h1 {
     font-size: 2.1em;
   }
+
   h4 {
     font-size: 18px;
   }
+
   p {
     padding-top: 20px;
   }
+
   .contact {}
+
   .musicSection {
     padding-top: 0px;
   }
+
   .social-bar {
     width: 100%;
     height: 70px;
     background: none;
   }
+
   .section-width {
     width: 100%;
   }
+
   i.fa {
     font-size: 38px;
     line-height: 38px;
@@ -482,18 +439,23 @@ i.fa:hover {
     color: white;
     background: none;
   }
+
   .sjsu-logo {
     display: none;
   }
+
   .html-logo {
     display: none;
   }
+
   .css-logo {
     display: none;
   }
+
   .carousel {
     height: 320px;
   }
+
   .carousel img {
     display: block;
     height: 300px;
@@ -506,34 +468,44 @@ i.fa:hover {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
   section {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .landing-page h1 {
-    font-size: 4.8rem;
+    font-size: 2.5rem;
     margin: 0;
   }
+
   .landing-page {
     padding-top: 30px;
     padding-left: 40px;
   }
+
   .links {
     font-size: 32px;
   }
+
   .section-width {
     width: 100%;
   }
+
   li {
     font-size: 16px;
   }
+
   .hero-width {
     width: 90%;
   }
+
   h1 {
     font-size: 2em;
   }
+
   p {}
+
   /*
   #links {
     padding-bottom: 8px;
@@ -547,6 +519,7 @@ i.fa:hover {
     height: 80px;
     background: none;
   }
+
   i.fa {
     font-size: 48px;
     line-height: 48px;
@@ -555,18 +528,23 @@ i.fa:hover {
     color: white;
     background: none;
   }
+
   .sjsu-logo {
     display: none;
   }
+
   .html-logo {
     display: none;
   }
+
   .css-logo {
     display: none;
   }
+
   .carousel {
     height: 320px;
   }
+
   .carousel img {
     display: block;
     height: 300px;
@@ -581,12 +559,15 @@ i.fa:hover {
     margin: 20px 5px;
     color: white;
   }
+
   .section-width {
     width: 87%;
   }
+
   .social-bar {
     height: 100px;
   }
+
   .snapcode-popup {
     margin-top: -60px;
     margin-left: 330px;
@@ -594,33 +575,44 @@ i.fa:hover {
     height: 72px;
     background-size: 64px;
   }
+
   .nav1 {}
+
   .hero-width {
     width: 90%;
   }
+
   h1 {
     font-size: 1.8em;
   }
+
   p {}
+
   .landing-page h1 {
-    font-size: 6.8rem;
+    font-size: 5rem;
     padding-top: 30px;
   }
+
   #links {
     margin-bottom: 20px;
   }
+
   .sjsu-logo {
     display: none;
   }
+
   .html-logo {
     display: none;
   }
+
   .css-logo {
     display: none;
   }
+
   .carousel {
     height: 420px;
   }
+
   .carousel img {
     display: block;
     height: 400px;
@@ -631,25 +623,32 @@ i.fa:hover {
   .section-width {
     width: 80%;
   }
+
   .landing-page h1 {
     padding-top: 40px;
-    font-size: 8rem;
+    font-size: 6rem;
   }
+
   .landing-page a p {
     margin-bottom: 60px;
   }
+
   .sjsu-logo {
     display: block;
   }
+
   .html-logo {
     display: block;
   }
+
   .css-logo {
     display: block;
   }
+
   .carousel {
     height: 520px;
   }
+
   .carousel img {
     display: block;
     height: 500px;
@@ -658,19 +657,23 @@ i.fa:hover {
 
 @media only screen and (min-width: 992px) and (max-width: 1999px) {
   .landing-page h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     padding-top: 50px;
     margin-bottom: 80px;
   }
+
   .landing-page a p {
     margin-bottom: 70px;
   }
+
   .sjsu-logo {
     display: block;
   }
+
   .html-logo {
     display: block;
   }
+
   .css-logo {
     display: block;
   }
