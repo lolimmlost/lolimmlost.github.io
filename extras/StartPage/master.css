@@ -15,7 +15,7 @@
   --search-color: #ffff;
   --bg-color: #4a707a;
   --bg: url('img/2.jpg');
-  --search-bar-width: 60%;
+
   --hover-color: #D3DFFF;
 }
 
@@ -84,43 +84,49 @@ header {}
 /**************************
 Date and Time Date, Month - Day, Year, Time,
 **************************/
-#clockbox {}
+#clockbox {
+}
 
 .search {
   text-align: center;
   align-items: center;
+  display: flex;
+  justify-content: center;
   margin: var(--small-margins) auto;
 }
 
 .search-bar {
   margin: 0 auto;
-  width: 60%;
-  height: 80px;
+  height: 100%;
+  border-radius: 2px;
+  display: flex;
+  border: solid #ccc 1px;
 }
-
+form {
+  width: 53%;
+}
 .search-bar:hover {
   box-shadow: 0px 0px 0px 6px var(--hover-color);
 }
-
 input {
   background: var(--search-color);
   width: 100%;
-  border: none;
 }
-
 input[type="text"] {
   height: 40px;
   border: none;
-  border-bottom: 1px solid black;
   /* Separating line between seatch and button*/
 }
-
 input[type="submit"] {
   height: 40px;
+  width: 40px;
+  border: none;
+  border-left: solid #ccc 1px;
   transition: opacity var(--transition-speed) ease;
+  float: right;
 }
 
-input[type="submit"]:hover {
+input:hover {
   opacity: 0.8;
 }
 
@@ -128,12 +134,13 @@ input[type="submit"]:hover {
 Tile Set Up
 **************************/
 .tiles {
-  max-width: 100%;
+  display: flex;
   margin: 0 auto;
   margin-bottom: 2rem;
   display: table;
   text-align: center;
   padding: 0;
+  justify-content: center;
   /*background-color: #E1E5EE;*/
 }
 
@@ -295,7 +302,7 @@ p {
     margin: 0;
   }
 
-  .search-bar, .tiles {
+  form, .search-bar, .tiles {
     width: 100%;
   }
 
@@ -334,7 +341,7 @@ p {
     margin: 0;
   }
 
-  .search-bar, .tiles {
+  form, .search-bar, .tiles {
     width: 100%;
   }
 
@@ -370,7 +377,7 @@ p {
     margin: 0;
   }
 
-  .search-bar, .tiles {
+  form, .search-bar, .tiles {
     width: 90%;
   }
 
@@ -405,7 +412,7 @@ p {
     margin: 0;
   }
 
-  .search-bar, .tiles {
+  form, .search-bar, .tiles {
     width: 80%;
   }
 
@@ -442,7 +449,7 @@ p {
     margin: 0;
   }
 
-  .search-bar, .tiles {
+  form, .search-bar, .tiles {
     width: 86%;
   }
 
@@ -482,7 +489,7 @@ p {
     margin: 0;
   }
 
-  .search-bar, .tiles {
+  form, .search-bar, .tiles {
     width: 86%;
   }
 
