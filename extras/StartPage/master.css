@@ -91,6 +91,7 @@ Date and Time Date, Month - Day, Year, Time,
   display: flex;
   justify-content: center;
   margin: var(--small-margins) auto;
+  max-width: 95%;
 }
 
 .search-bar {
@@ -101,8 +102,8 @@ Date and Time Date, Month - Day, Year, Time,
   border: solid #ccc 1px;
 }
 
-form {
-  width: 53%;
+form, .search, .tiles {
+  width: 90%;
 }
 
 .search-bar:hover {
@@ -111,12 +112,13 @@ form {
 
 input {
   background: var(--search-color);
-  width: 100%;
+  width: 95%;
 }
 
 input[type="text"] {
   height: 40px;
   border: none;
+  margin: 0 auto;
   /* Separating line between seatch and button*/
 }
 
@@ -127,6 +129,7 @@ input[type="submit"] {
   border-left: solid #ccc 1px;
   transition: opacity var(--transition-speed) ease;
   float: right;
+  margin: 0 auto;
 }
 
 input:hover {
@@ -136,6 +139,9 @@ input:hover {
 /**************************
 Tile Set Up
 **************************/
+form, .search, .tiles {
+  width: 90%;
+}
 .tiles {
   display: flex;
   margin: 0 auto;
@@ -305,12 +311,9 @@ p {
     margin: 0;
   }
 
-  form, .search-bar, .tiles {
-    width: 100%;
-  }
 
-  .tiles {
-    width: 100%;
+  form, .search, .tiles {
+    width: 90%;
   }
 
   .tile-wrap {
@@ -344,7 +347,7 @@ p {
     margin: 0;
   }
 
-  form, .search-bar, .tiles {
+  form, .search, .tiles {
     width: 100%;
   }
 
@@ -380,7 +383,7 @@ p {
     margin: 0;
   }
 
-  form, .search-bar, .tiles {
+  form, .search, .tiles {
     width: 90%;
   }
 
@@ -419,7 +422,7 @@ p {
     margin: 0;
   }
 
-  form, .search-bar, .tiles {
+  form, .search, .tiles {
     width: 86%;
   }
 
@@ -458,7 +461,7 @@ p {
     margin: 0;
   }
 
-  form, .search-bar, .tiles {
+  form, .search, .tiles {
     width: 86%;
   }
 
@@ -500,6 +503,9 @@ p {
   .tagline {
     padding-bottom: 1rem;
     margin: 0;
+  }
+  form, .search, .tiles {
+    width: 86%;
   }
 
   .tiles {
