@@ -112,7 +112,7 @@ form, .search, .tiles {
 
 input {
   background: var(--search-color);
-  width: 95%;
+  width: 100%;
 }
 
 input[type="text"] {
@@ -311,7 +311,6 @@ p {
     margin: 0;
   }
 
-
   form, .search, .tiles {
     width: 90%;
   }
@@ -348,7 +347,7 @@ p {
   }
 
   form, .search, .tiles {
-    width: 100%;
+    width: 90%;
   }
 
   .tile-wrap {
