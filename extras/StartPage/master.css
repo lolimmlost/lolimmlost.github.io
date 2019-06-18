@@ -15,7 +15,6 @@
   --search-color: #ffff;
   --bg-color: #4a707a;
   --bg: url('img/2.jpg');
-
   --hover-color: #D3DFFF;
 }
 
@@ -72,7 +71,7 @@ header {}
 .hero {
   padding-bottom: 0;
   margin: 0;
-  padding-top: 4rem;
+  padding-top: 10rem;
   font-size: 3rem;
 }
 
@@ -84,8 +83,7 @@ header {}
 /**************************
 Date and Time Date, Month - Day, Year, Time,
 **************************/
-#clockbox {
-}
+#clockbox {}
 
 .search {
   text-align: center;
@@ -102,21 +100,26 @@ Date and Time Date, Month - Day, Year, Time,
   display: flex;
   border: solid #ccc 1px;
 }
+
 form {
   width: 53%;
 }
+
 .search-bar:hover {
   box-shadow: 0px 0px 0px 6px var(--hover-color);
 }
+
 input {
   background: var(--search-color);
   width: 100%;
 }
+
 input[type="text"] {
   height: 40px;
   border: none;
   /* Separating line between seatch and button*/
 }
+
 input[type="submit"] {
   height: 40px;
   width: 40px;
@@ -156,8 +159,8 @@ Tile Set Up
   margin-bottom: var(--tile-margin-bottom);
   margin-right: var(--tile-margin);
   /*Tile properties*/
-  width: 8rem;
-  height: 8rem;
+  width: 5rem;
+  height: 5rem;
   background-color: var(--tile-color);
   display: inline-block;
   text-align: center;
@@ -292,8 +295,8 @@ p {
 @media only screen and (max-width: 230px) {
   .hero {
     padding-bottom: 0;
+    padding-top: 5rem;
     margin: 0;
-    padding-top: 4rem;
     font-size: 2rem;
   }
 
@@ -318,7 +321,7 @@ p {
   .tile-image {
     width: 3rem;
     height: 3rem;
-    margin: .5rem 0 0 .5rem;
+    margin: .1rem 0 0 .1rem;
     background-size: 2.5rem 2.5rem, contain, cover;
   }
 
@@ -331,8 +334,8 @@ p {
 @media only screen and (min-width: 231px) {
   .hero {
     padding-bottom: 0;
+    padding-top: 5rem;
     margin: 0;
-    padding-top: 4rem;
     font-size: 2rem;
   }
 
@@ -348,14 +351,14 @@ p {
   .tile-wrap {
     width: 4rem;
     height: 4rem;
-    margin: 1rem 0 0 .5rem;
+    margin: .5rem 0 0 .25rem;
   }
 
   .tile-image {
     width: 3rem;
     height: 3rem;
     margin: .5rem 0 0 .5rem;
-    background-size: 2.5rem 2.5rem, contain, cover;
+    background-size: 2.25rem 2.25rem, contain, cover;
   }
 
   .link {
@@ -367,8 +370,8 @@ p {
 @media only screen and (min-width: 320px) {
   .hero {
     padding-bottom: 0;
+    padding-top: 7rem;
     margin: 0;
-    padding-top: 4rem;
     font-size: 2rem;
   }
 
@@ -381,6 +384,10 @@ p {
     width: 90%;
   }
 
+  .tiles {
+    max-width: 300px;
+  }
+
   .tile-wrap {
     width: 4rem;
     height: 4rem;
@@ -399,48 +406,11 @@ p {
   }
 }
 
-@media only screen and (min-width: 340px) {
+@media only screen and (min-width: 460px) {
   .hero {
     padding-bottom: 0;
+    padding-top: 9rem;
     margin: 0;
-    padding-top: 4rem;
-    font-size: 2rem;
-  }
-
-  .tagline {
-    padding-bottom: 1rem;
-    margin: 0;
-  }
-
-  form, .search-bar, .tiles {
-    width: 80%;
-  }
-
-  .tile-wrap {
-    width: 4rem;
-    height: 4rem;
-    margin: 1rem 0 0 .5rem;
-  }
-
-  .tile-image {
-    background-size: 2.5rem 2.5rem, contain, cover;
-    width: 3rem;
-    height: 3rem;
-    margin: .5rem 0 0 .5rem;
-  }
-
-  .link {
-    max-width: 100%;
-    max-height: 100%;
-  }
-}
-}
-
-@media only screen and (min-width: 360px) {
-  .hero {
-    padding-bottom: 0;
-    margin: 0;
-    padding-top: 4rem;
     font-size: 2rem;
   }
 
@@ -454,7 +424,7 @@ p {
   }
 
   .tiles {
-    max-width: 73%;
+    max-width: 500px;
   }
 
   .tile-wrap {
@@ -467,7 +437,7 @@ p {
     background-size: 3rem 3rem, contain, cover;
     width: 3rem;
     height: 3rem;
-    margin: 1.5rem 0 0 1.5rem;
+    margin: 1rem 0 0 1rem;
   }
 
   .link {
@@ -480,7 +450,6 @@ p {
   .hero {
     padding-bottom: 0;
     margin: 0;
-    padding-top: 4rem;
     font-size: 2rem;
   }
 
@@ -494,7 +463,7 @@ p {
   }
 
   .tiles {
-    max-width: 73%;
+    max-width: 780px;
   }
 
   .tile-wrap {
@@ -520,8 +489,12 @@ p {
   .hero {
     padding-bottom: 0;
     margin: 0;
-    padding-top: 4rem;
     font-size: 3rem;
+  }
+
+  .header {
+    position: absolute;
+    margin-top: 30%;
   }
 
   .tagline {
@@ -529,19 +502,23 @@ p {
     margin: 0;
   }
 
+  .tiles {
+    max-width: 780px;
+  }
+
   .tile-wrap {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     margin-bottom: 1rem;
     margin-right: 2rem;
     margin: 1rem 0 0 .5rem;
   }
 
   .tile-image {
-    background-size: 3rem 3rem, contain, cover;
-    width: 3rem;
-    height: 3rem;
-    margin: 1.5rem 0 0 1.5rem;
+    background-size: 2.5rem 2.5rem, contain, cover;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1.25rem 0 0 1.25rem;
   }
 }
 
