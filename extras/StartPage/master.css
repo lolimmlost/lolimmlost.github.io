@@ -14,7 +14,7 @@
   --text-color: #D5D4CF;
   --search-color: #ffff;
   --bg-color: #4a707a;
-  --bg: url('https://images.pexels.com/photos/2387542/pexels-photo-2387542.jpeg?cs=srgb&dl=architecture-building-contemporary-2387542.jpg&fm=jpg');
+  --bg: url('https://images.pexels.com/photos/2440009/pexels-photo-2440009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   --hover-color: #D3DFFF;
   --page-width: 860px;
 }
@@ -32,7 +32,7 @@ html {
 
 body {
   display: block;
-  background: var(--bg), no-repeat center center fixed;
+  background: var(--bg), no-repeat 50% 50% fixed;
   background-size: cover;
   height: 100%;
   background-color: white;
@@ -43,7 +43,6 @@ body {
 /**************************
 Header and Clockbox
 **************************/
-header {}
 
 .color-bar {
   height: 12px;
@@ -401,46 +400,6 @@ Footer
   }
 }
 
-/*
-@media only screen and (min-width: 320px) {
-  .hero {
-    padding-bottom: 0;
-    padding-top: 7rem;
-    margin: 0;
-    font-size: 2rem;
-  }
-
-  .tagline {
-    padding-bottom: 1rem;
-    margin: 0;
-  }
-
-  form, .search, .tiles {
-    width: 90%;
-  }
-
-  .tiles {
-    max-width: 300px;
-  }
-
-  .tile-wrap {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .tile-image {
-    width: 3rem;
-    height: 3rem;
-    margin: .5rem 0 0 .5rem;
-    background-size: 2.5rem 2.5rem, contain, cover;
-  }
-
-  .link {
-    max-width: 100%;
-    max-height: 100%;
-  }
-}
-*/
 @media only screen and (min-width: 768px) and (max-width:1023px) {
   .hero {
     padding-bottom: 0;
