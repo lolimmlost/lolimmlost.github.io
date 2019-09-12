@@ -1,0 +1,99 @@
+:root {
+  --main-color: #ed4936;
+  --second-color: #246592;
+  --light-grey: #dad4cb;
+  --dim-grey: #645c4a;
+  --rosy-brown: #9f927b;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url("https://static.pexels.com/photos/2156/sky-earth-space-working.jpg") no-repeat 50% 50% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#headline {
+  font-family: "Mrs Sheppards";
+  font-size: 8rem;
+  text-shadow: 4px 4px white;
+  color: var(--main-color);
+  padding: 0;
+  margin: 0;
+}
+#links {
+  font-family: "Montserrat";
+  font-size: 4rem;
+  color: white;
+  text-shadow: 5px 5px var(--main-color);
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+a :hover {
+  color: var(--second-color);
+}
+
+@media all and (max-width: 1690px) {
+  h1 {
+    font-size: 8rem;
+  }
+  p {
+    font-size: 4rem;
+  }
+}
+@media all and (max-width: 1280px) {
+  h1 {
+    font-size: 8rem;
+  }
+  p {
+    font-size: 4rem;
+  }
+}
+@media all and (max-width: 980px) {
+  h1 {
+    font-size: 6.5rem;
+  }
+  p {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){}
+  h1 {
+    font-size: 148px;
+  }
+  p {
+    font-size: 64px;
+    text-shadow: 4px 4px var(--main-color);
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  h1 {
+    font-size: 84px;
+  }
+  p {
+    font-size: 48px;
+    text-shadow: 4px 4px var(--main-color);
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  h1 {
+    font-size: 72px;
+  }
+  p {
+    font-size: 36px;
+    text-shadow: 3px 3px var(--main-color);
+  }
+}
