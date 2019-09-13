@@ -1,32 +1,64 @@
+html{
+  margin: 0 auto;
+}
 body{
   background: #2b5876; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2b5876, #4e4376); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2b5876, #4e4376); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin:0 auto;
+  width: 100vw;;
 }
+.container{
+  padding: 20px 0 80px 0;
+}
+.header{
+  margin: 0 auto;
+  position: relative;
+  top:10vh;
+}
+h1{
+    margin: 0 auto;
+}
+.search-container{
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  top: 10vh;
 
-
+}
+div form{
+  margin: 0 auto;
+}
+.links{
+  position: relative;
+  top: 10vh;
+  width: 50vw;
+}
 .link{
-  width: 100px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
   height: 100px;
+  margin: 0 auto;
+  max-width: 100%;
   text-align: center;
-    background-position: 50% 50%;
-    background-size: 80px 80px;
-    background-repeat: no-repeat;
-
+  transition: all 250ms ease-in-out;
+  width: 100px;
 }
 a:hover{
-  text-decoration: none;
   background-color: #1c6e8c;
+  text-decoration: none;
 }
 a{
-border: 3px solid green;
+
+border-radius: 10px;
 margin-top: 50px;
 }
 /**************************
 TILE LNKS
 ***************************/
 .gmail {
-  background-image: url('img\gmail.png');
+  background-image: url('../img/gmail.png');
 }
 
 .canvas {
@@ -34,11 +66,11 @@ TILE LNKS
 }
 
 .soundcloud {
-  background-image: url('img/soundcloud.png');
+  background-image: url('../img/soundcloud.png');
 }
 
 .youtube {
-  background-image: url('img/youtube.png');
+  background-image: url('../img/youtube.png');
 }
 
 .p5 {
@@ -47,33 +79,33 @@ TILE LNKS
 }
 
 .netflix {
-  background-image: url('img/netflix.png');
+  background-image: url('../img/netflix.png');
 }
 
 .twitter {
-  background-image: url('img/twitter.png');
+  background-image: url('../img/twitter.png');
 }
 
 .amazon {
-  background-image: url('img/amazon.png');
+  background-image: url('../img/amazon.png');
 }
 
 .twitch {
-  background-image: url('img/twitch.png');
+  background-image: url('../img/twitch.png');
 }
 
 .reddit {
-  background-image: url('img/reddit.png');
+  background-image: url('../img/reddit.png');
 }
 
 .instagram {
-  background-image: url('img/instagram.png');
+  background-image: url('../img/instagram.png');
 }
 
 .github {
-  background-image: url('img/github.png');
+  background-image: url('../img/github.png');
 }
 
 .dribble {
-  background-image: url('img/dribble.png');
+  background-image: url('../img/dribble.png');
 }
