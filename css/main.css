@@ -1,0 +1,79 @@
+body{
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2b5876, #4e4376); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2b5876, #4e4376); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.link{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+    background-position: 50% 50%;
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+
+}
+a:hover{
+  text-decoration: none;
+  background-color: #1c6e8c;
+}
+a{
+border: 3px solid green;
+margin-top: 50px;
+}
+/**************************
+TILE LNKS
+***************************/
+.gmail {
+  background-image: url('img\gmail.png');
+}
+
+.canvas {
+  background-image: url('https://lh3.ggpht.com/Enz_xjXLJ4IVLt8z59qQ9Zlg4AmBc_4wzzm6xgnCsIYX8nPAPteDSVc9dAgITtha_SUY=w300');
+}
+
+.soundcloud {
+  background-image: url('img/soundcloud.png');
+}
+
+.youtube {
+  background-image: url('img/youtube.png');
+}
+
+.p5 {
+  background-image: url('https://p5js.org/assets/img/p5js.svg');
+  background-position: center;
+}
+
+.netflix {
+  background-image: url('img/netflix.png');
+}
+
+.twitter {
+  background-image: url('img/twitter.png');
+}
+
+.amazon {
+  background-image: url('img/amazon.png');
+}
+
+.twitch {
+  background-image: url('img/twitch.png');
+}
+
+.reddit {
+  background-image: url('img/reddit.png');
+}
+
+.instagram {
+  background-image: url('img/instagram.png');
+}
+
+.github {
+  background-image: url('img/github.png');
+}
+
+.dribble {
+  background-image: url('img/dribble.png');
+}
