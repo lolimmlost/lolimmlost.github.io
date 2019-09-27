@@ -82,7 +82,7 @@ TILE LNKS
 }
 
 .canvas {
-  background-image: url('https://lh3.ggpht.com/Enz_xjXLJ4IVLt8z59qQ9Zlg4AmBc_4wzzm6xgnCsIYX8nPAPteDSVc9dAgITtha_SUY=w300');
+  background-image: url('../img/canvas.png');
 }
 
 .soundcloud {
@@ -94,7 +94,7 @@ TILE LNKS
 }
 
 .p5 {
-  background-image: url('https://p5js.org/assets/img/p5js.svg');
+  background-image: url('../img/p5js.png');
   background-position: center;
 }
 
