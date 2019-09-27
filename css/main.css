@@ -129,8 +129,22 @@ TILE LNKS
 .dribble {
   background-image: url('../img/dribble.png');
 }
-@media only screen and (min-width: 321px) and (max-width:767px) {
+@media only screen and (min-width: 300px) and (max-width:767px) {
   .input-search{
     width: 210px;
+  }
+  .links {
+    width: 80vw;
+  }
+  .link {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+    height: 100px;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    transition: all 250ms ease-in-out;
+    width: 100px;
   }
 }
