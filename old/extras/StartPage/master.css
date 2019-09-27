@@ -43,7 +43,6 @@ body {
 /**************************
 Header and Clockbox
 **************************/
-
 .color-bar {
   height: 12px;
   display: flex;
@@ -164,8 +163,6 @@ form, .search, .tiles {
 .tiles h3 {
   margin: 1.5rem;
 }
-
-
 
 .tile-wrap {
   margin-bottom: var(--tile-margin-bottom);
@@ -299,8 +296,8 @@ Footer
   font-size: .8rem;
   color: black;
   padding: .5rem;
-
 }
+
 .footer div {
   height: 64px;
   text-align: center !important;
@@ -364,9 +361,8 @@ Footer
     margin: .25rem 0 0 .25rem;
     background-size: 1.5rem 1.5rem, contain, cover;
   }
-  .footer p{
 
-  }
+  .footer p {}
 }
 
 @media only screen and (min-width: 321px) and (max-width:767px) {

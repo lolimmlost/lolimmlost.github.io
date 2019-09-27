@@ -43,7 +43,7 @@ div form {
 
 .input-search {
   max-width: 100%;
-  width: 300px;
+  width: 320px;
 }
 
 .links {
@@ -128,4 +128,9 @@ TILE LNKS
 
 .dribble {
   background-image: url('../img/dribble.png');
+}
+@media only screen and (min-width: 321px) and (max-width:767px) {
+  .input-search{
+    width: 210px;
+  }
 }
