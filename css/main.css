@@ -136,6 +136,9 @@ TILE LNKS
 .smartworks5{
   background-image: url('../img/smartworks5.png');
 }
+.hulu{
+  background-image: url("../img/hulu.png");
+}
 @media only screen and (min-width: 240px) and (max-width:767px) {
   .input-search{
     width: 210px;
