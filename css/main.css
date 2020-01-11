@@ -1,17 +1,40 @@
+* {
+  --border-color: #a4a4a4;
+}
+
 html {
   margin: 0 auto;
 }
 
 body {
-  background: #2b5876;
-  /* fallback for old browsers */
+  /*   background: #2b5876;
+  /* fallback for old browsers
   background: -webkit-linear-gradient(to right, #2b5876, #4e4376);
-  /* Chrome 10-25, Safari 5.1-6 */
+  /* Chrome 10-25, Safari 5.1-6
   background: linear-gradient(to right, #2b5876, #4e4376);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+
+  */
+  background-image: url('../img/bg-min.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
   width: 100vw;
-  ;
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+div form {
+  background: none;
+  border: none;
+  margin: 0 auto;
+}
+
+div #clockbox {
+  font-size: 2rem;
 }
 
 .container {
@@ -24,10 +47,6 @@ body {
   top: 10vh;
 }
 
-h1 {
-  margin: 0 auto;
-}
-
 .search-container {
   margin: 0 auto;
   max-width: 100%;
@@ -35,15 +54,9 @@ h1 {
   top: 10vh;
 }
 
-div form {
-  background: none;
-  border: none;
-  margin: 0 auto;
-}
-
 .input-search {
   max-width: 100%;
-  width: 320px;
+  width: 720px;
 }
 
 .links {
@@ -70,16 +83,23 @@ a:hover {
 }
 
 a {
-  border-radius: 10px;
+  border-radius: 8px;
   margin-top: 50px;
 }
-iframe{
-  margin: 10% auto;
+
+iframe {
+  margin: 7% auto;
 }
 
 /**************************
 TILE LNKS
 ***************************/
+.link-container {
+  border: var(--border-color) 1px solid;
+  border-radius: 8px;
+  padding: 1em;
+}
+
 .gmail {
   background-image: url('../img/gmail.png');
 }
@@ -132,23 +152,35 @@ TILE LNKS
 .dribble {
   background-image: url('../img/dribble.png');
 }
-.smartworks5{
+
+.smartworks5 {
   background-image: url('../img/smartworks5.png');
 }
-.hulu{
+
+.hulu {
   background-image: url("../img/hulu.png");
 }
+
 @media only screen and (min-width: 240px) and (max-width:767px) {
-  .input-search{
+  div #clockbox {
+    font-size: 1rem;
+  }
+  .input-search {
     width: 210px;
   }
+
   .links {
     width: 90vw;
   }
+
+  .link-container {
+    padding: 0;
+  }
+
   .link {
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: 64px 64px;
+    background-size: 48px 48px;
     height: 100px;
     margin: 0 auto;
     max-width: 100%;
