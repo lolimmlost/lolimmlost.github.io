@@ -3,19 +3,40 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: #889ECE;
-}
-.hero {
-    margin-top: 25%;
 }
 .flex {
     display: flex;
     flex-direction: column;
 }
 .align-center {
-    align-items: center;
+    align-items: flex-start;
 }
+.container{
+    max-width: 50%;
+    max-height: 50%;
+    border: 1px solid green;
+}
+
+.hero {
+    margin: 25% 25%;
+}
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
 @media not all and (min-width: 640px) { }
 @media not all and (min-width: 768px) { }
 @media not all and (min-width: 1024px) { }
