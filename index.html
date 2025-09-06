@@ -1,26 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juan Reyes – Homelab & AI Engineer</title>
+  <link rel="stylesheet" href="main.css" />
+
+  <!-- Schema.org JSON-LD for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Juan Reyes",
+    "jobTitle": "Homelab & AI Engineer",
+    "url": "https://github.com/juan-reyes",
+    "sameAs": [
+      "https://github.com/juan-reyes",
+      "https://www.linkedin.com/in/juan-reyes",
+      "https://appahouse.com"
+    ],
+    "knowsAbout": [
+      "Proxmox", "TrueNAS", "Docker", "Self-hosting",
+      "Networking", "AI", "Automation", "DevOps",
+      "Cloudflare Zero Trust", "Ghost CMS", "Navidrome",
+      "ARR Stack", "Uptime Kuma", "Homelab Monitoring"
+    ]
+  }
+  </script>
+  <!-- in header -->
+<button id="themeToggle" aria-label="Toggle theme" style="margin-left:auto;border:1px solid currentColor;border-radius:999px;padding:.35rem .7rem;background:transparent;cursor:pointer">
+  🌓
+</button>
+
+<script>
+  (function () {
+    const root = document.documentElement;
+    const key = "theme";
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const saved = localStorage.getItem(key);
+    const applied = saved || (prefersDark ? "dark" : "light");
+    root.setAttribute("data-theme", applied);
+
+    document.getElementById("themeToggle")?.addEventListener("click", () => {
+      const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      localStorage.setItem(key, next);
+    });
+  })();
+</script>
+
 </head>
-<body class="flex w-full">
-    <div class="flex w-full column container align-center hero">
-        <div class="flex "><h1 class="flex main">Welcome Juan</h1></div>
-        <div><h2>The time is:</h1></div>
-        <div class="w-full"> <input class="w-full" type="text" placeholder="Search.."></div>      
-       
-        <div class="flex w-full">
-            <ul class="flex w-full icon-container">
-                <li class="flex">1</li>
-                <li class="flex">2</li>
-                <li class="flex">3</li>
-            </ul>
-        </div>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="name">Juan Reyes</h1>
+      <p class="subtitle">Homelab Engineer • Proxmox • TrueNAS • Docker • AI • ARR Stack • Self-hosting</p>
+      <nav aria-label="Main">
+        <a href="#summary" class="pill">Summary</a>
+        <a href="#skills" class="pill">Skills</a>
+        <a href="#experience" class="pill">Experience</a>
+        <a href="#projects" class="pill">Projects</a>
+        <a href="#contact" class="pill">Contact</a>
+      </nav>
     </div>
-    
+  </header>
+
+  <main class="container main">
+    <section id="summary" class="card">
+      <h2>Summary</h2>
+      <p>Self-driven engineer passionate about homelabs, automation, and private AI. I specialize in virtualization, storage, and monitoring — with a focus on Proxmox, TrueNAS, and Docker. I’ve built full ARR stacks, custom dashboards with Uptime Kuma and Grafana, and privacy-first AI integrations. My work balances experimentation with reliability, ensuring data integrity and uptime while learning and iterating on new technologies.</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Infrastructure & Virtualization</h3>
+          <ul>
+            <li>Proxmox VE clustering & monitoring</li>
+            <li>Docker & Docker Compose deployments</li>
+            <li>KVM/VM management</li>
+            <li>Automation & Scripting (Bash, Python, Node.js)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Storage & Networking</h3>
+          <ul>
+            <li>TrueNAS Core/Scale (ZFS, RAID-Z, SMART)</li>
+            <li>Networking: VLANs, bridging, access control</li>
+            <li>Cloudflare Zero Trust for self-hosted apps</li>
+            <li>DNS, DHCP, VPN (WireGuard, OpenVPN)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Web & AI</h3>
+          <ul>
+            <li>Self-hosted websites (Nginx, Ghost CMS, TLS automation)</li>
+            <li>ARR stack (Sonarr, Radarr, Lidarr, Prowlarr)</li>
+            <li>Private AI workflows, Navidrome + GPT integration</li>
+            <li>Monitoring dashboards (Uptime Kuma, Grafana, custom Node.js agents)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Projects & Experience</h2>
+      <ul class="timeline">
+        <li>
+          <strong>Homelab Infrastructure</strong> — Built a Proxmox + TrueNAS cluster running Docker workloads, storage pools with ZFS, and automated backup pipelines. Added Uptime Kuma + Node.js for real-time CPU/RAM and service status reporting.
+        </li>
+        <li>
+          <strong>Appahouse.com</strong> — Self-hosted personal site powered by Ghost CMS, secured with Cloudflare Zero Trust, and integrated with Homarr + Homer dashboards.
+        </li>
+        <li>
+          <strong>Custom ARR Stack Dashboard</strong> — Designed a sleek monitoring dashboard with matrix-style visuals, live system graphs (Chart.js), and service health alerts.
+        </li>
+        <li>
+          <strong>AI & Music Automation</strong> — Integrated GPT with Navidrome for playlist generation, playback support, and music discovery workflows.
+        </li>
+        <li>
+          <strong>Networking & Security</strong> — Deployed VLAN-based segmentation, VPN access with WireGuard, and Cloudflare-based access control for apps.
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card" aria-label="Additional projects">
+      <h2>Additional Projects</h2>
+      <ul>
+        <li>Self-hosted Minecraft server with backups and monitoring</li>
+        <li>Paperless-ngx deployment for document management</li>
+        <li>GitHub project tracking with BMAD auto-save workflows</li>
+        <li>Dockerized frontend apps with custom Nginx configs</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>📧 Email: <a href="mailto:juan@appahouse.com">juan@appahouse.com</a></p>
+      <p>🐙 GitHub: <a href="https://github.com/Lolimmlost">github.com/Lolimmlost</a></p>
+      <p>💼 LinkedIn: <a href="https://linkedin.com/in/juansci">linkedin.com/in/juansci</a></p>
+      <p>🌐 Website: <a href="https://appahouse.com">appahouse.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2025 Juan Reyes — Hosted on GitHub Pages</p>
+  </footer>
 </body>
 </html>
