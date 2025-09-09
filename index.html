@@ -28,48 +28,61 @@
     ]
   }
   </script>
-  <!-- in header -->
-<button id="themeToggle" aria-label="Toggle theme" style="margin-left:auto;border:1px solid currentColor;border-radius:999px;padding:.35rem .7rem;background:transparent;cursor:pointer">
-  🌓
-</button>
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const key = "theme";
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const saved = localStorage.getItem(key);
+      const applied = saved || (prefersDark ? "dark" : "light");
+      root.setAttribute("data-theme", applied);
 
-<script>
-  (function () {
-    const root = document.documentElement;
-    const key = "theme";
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const saved = localStorage.getItem(key);
-    const applied = saved || (prefersDark ? "dark" : "light");
-    root.setAttribute("data-theme", applied);
-
-    document.getElementById("themeToggle")?.addEventListener("click", () => {
-      const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-      root.setAttribute("data-theme", next);
-      localStorage.setItem(key, next);
-    });
-  })();
-</script>
-
+      // Defer toggle setup until button exists
+      function setupToggle() {
+        const toggle = document.getElementById("themeToggle");
+        if (toggle) {
+          toggle.addEventListener("click", () => {
+            const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            root.setAttribute("data-theme", next);
+            localStorage.setItem(key, next);
+          });
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupToggle);
+      } else {
+        setupToggle();
+      }
+    })();
+  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <h1 class="name">Juan Reyes</h1>
-      <p class="subtitle">Homelab Engineer • Proxmox • TrueNAS • Docker • AI • ARR Stack • Self-hosting</p>
-      <nav aria-label="Main">
-        <a href="#summary" class="pill">Summary</a>
-        <a href="#skills" class="pill">Skills</a>
-        <a href="#experience" class="pill">Experience</a>
-        <a href="#projects" class="pill">Projects</a>
-        <a href="#contact" class="pill">Contact</a>
-      </nav>
+      <img src="https://via.placeholder.com/80x80/4B6EFC/ffffff?text=JR" alt="Juan Reyes professional profile" class="profile-img">
+      <div class="name-subtitle">
+        <h1 class="name">Juan Reyes</h1>
+        <p class="subtitle">Homelab Engineer • Proxmox • TrueNAS • Docker • AI • ARR Stack • Self-hosting</p>
+      </div>
+      <div class="header-actions">
+        <nav aria-label="Main">
+          <a href="#summary" class="pill">Summary</a>
+          <a href="#skills" class="pill">Skills</a>
+          <a href="#experience" class="pill">Experience</a>
+          <a href="#projects" class="pill">Projects</a>
+          <a href="#contact" class="pill">Contact</a>
+        </nav>
+        <button id="themeToggle" aria-label="Toggle theme" class="theme-toggle">
+          🌓
+        </button>
+      </div>
     </div>
   </header>
 
   <main class="container main">
     <section id="summary" class="card">
       <h2>Summary</h2>
-      <p>Self-driven engineer passionate about homelabs, automation, and private AI. I specialize in virtualization, storage, and monitoring — with a focus on Proxmox, TrueNAS, and Docker. I’ve built full ARR stacks, custom dashboards with Uptime Kuma and Grafana, and privacy-first AI integrations. My work balances experimentation with reliability, ensuring data integrity and uptime while learning and iterating on new technologies.</p>
+      <p>Self-driven Homelab & AI Engineer specializing in Proxmox, TrueNAS, Docker, and ARR stacks. Experienced in building automated, privacy-focused systems with Uptime Kuma, Grafana, and GPT integrations. Balancing innovation with reliability for optimal uptime and data integrity.</p>
     </section>
 
     <section id="skills" class="card">
@@ -78,28 +91,28 @@
         <div class="skill-group">
           <h3>Infrastructure & Virtualization</h3>
           <ul>
-            <li>Proxmox VE clustering & monitoring</li>
-            <li>Docker & Docker Compose deployments</li>
-            <li>KVM/VM management</li>
-            <li>Automation & Scripting (Bash, Python, Node.js)</li>
+            <li><span class="skill-icon">🖥️</span> Proxmox VE: Clustering and monitoring</li>
+            <li><span class="skill-icon">🐳</span> Docker & Compose: Deployments and orchestration</li>
+            <li><span class="skill-icon">🖥️</span> KVM/VM: Advanced management</li>
+            <li><span class="skill-icon">⚙️</span> Automation: Bash, Python, Node.js scripting</li>
           </ul>
         </div>
         <div class="skill-group">
           <h3>Storage & Networking</h3>
           <ul>
-            <li>TrueNAS Core/Scale (ZFS, RAID-Z, SMART)</li>
-            <li>Networking: VLANs, bridging, access control</li>
-            <li>Cloudflare Zero Trust for self-hosted apps</li>
-            <li>DNS, DHCP, VPN (WireGuard, OpenVPN)</li>
+            <li><span class="skill-icon">💾</span> TrueNAS: ZFS, RAID-Z, SMART monitoring</li>
+            <li><span class="skill-icon">🌐</span> Networking: VLANs, bridging, access control</li>
+            <li><span class="skill-icon">🔒</span> Cloudflare Zero Trust: Secure self-hosted apps</li>
+            <li><span class="skill-icon">🔗</span> DNS, DHCP, VPN: WireGuard & OpenVPN</li>
           </ul>
         </div>
         <div class="skill-group">
           <h3>Web & AI</h3>
           <ul>
-            <li>Self-hosted websites (Nginx, Ghost CMS, TLS automation)</li>
-            <li>ARR stack (Sonarr, Radarr, Lidarr, Prowlarr)</li>
-            <li>Private AI workflows, Navidrome + GPT integration</li>
-            <li>Monitoring dashboards (Uptime Kuma, Grafana, custom Node.js agents)</li>
+            <li><span class="skill-icon">🌐</span> Self-hosted sites: Nginx, Ghost CMS, TLS automation</li>
+            <li><span class="skill-icon">🎵</span> ARR stack: Sonarr, Radarr, Lidarr, Prowlarr</li>
+            <li><span class="skill-icon">🤖</span> Private AI: Navidrome + GPT workflows</li>
+            <li><span class="skill-icon">📊</span> Dashboards: Uptime Kuma, Grafana, Node.js agents</li>
           </ul>
         </div>
       </div>
@@ -109,19 +122,19 @@
       <h2>Projects & Experience</h2>
       <ul class="timeline">
         <li>
-          <strong>Homelab Infrastructure</strong> — Built a Proxmox + TrueNAS cluster running Docker workloads, storage pools with ZFS, and automated backup pipelines. Added Uptime Kuma + Node.js for real-time CPU/RAM and service status reporting.
+          <strong>Homelab Infrastructure</strong> — Proxmox + TrueNAS cluster with Docker workloads, ZFS storage, automated backups. Real-time monitoring via Uptime Kuma and custom Node.js agents.
         </li>
         <li>
-          <strong>Appahouse.com</strong> — Self-hosted personal site powered by Ghost CMS, secured with Cloudflare Zero Trust, and integrated with Homarr + Homer dashboards.
+          <strong>Appahouse.com</strong> — Self-hosted Ghost CMS site, secured by Cloudflare Zero Trust, integrated with Homarr and Homer dashboards.
         </li>
         <li>
-          <strong>Custom ARR Stack Dashboard</strong> — Designed a sleek monitoring dashboard with matrix-style visuals, live system graphs (Chart.js), and service health alerts.
+          <strong>Custom ARR Stack Dashboard</strong> — Sleek monitoring interface with matrix visuals, Chart.js graphs, and health alerts.
         </li>
         <li>
-          <strong>AI & Music Automation</strong> — Integrated GPT with Navidrome for playlist generation, playback support, and music discovery workflows.
+          <strong>AI & Music Automation</strong> — GPT-Navidrome integration for AI-generated playlists and music discovery.
         </li>
         <li>
-          <strong>Networking & Security</strong> — Deployed VLAN-based segmentation, VPN access with WireGuard, and Cloudflare-based access control for apps.
+          <strong>Networking & Security</strong> — VLAN segmentation, WireGuard VPN, Cloudflare access control for secure app deployment.
         </li>
       </ul>
     </section>
@@ -129,10 +142,10 @@
     <section id="projects" class="card" aria-label="Additional projects">
       <h2>Additional Projects</h2>
       <ul>
-        <li>Self-hosted Minecraft server with backups and monitoring</li>
-        <li>Paperless-ngx deployment for document management</li>
-        <li>GitHub project tracking with BMAD auto-save workflows</li>
-        <li>Dockerized frontend apps with custom Nginx configs</li>
+        <li>Self-hosted Minecraft server with automated backups and monitoring</li>
+        <li>Paperless-ngx: Document management deployment</li>
+        <li>GitHub tracking with BMAD auto-save workflows</li>
+        <li>Dockerized frontend apps with custom Nginx configurations</li>
       </ul>
     </section>
 
@@ -142,6 +155,7 @@
       <p>🐙 GitHub: <a href="https://github.com/Lolimmlost">github.com/Lolimmlost</a></p>
       <p>💼 LinkedIn: <a href="https://linkedin.com/in/juansci">linkedin.com/in/juansci</a></p>
       <p>🌐 Website: <a href="https://appahouse.com">appahouse.com</a></p>
+      <p>📄 <a href="resume.pdf" download>Download Resume (PDF)</a></p>
     </section>
   </main>
 

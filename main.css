@@ -9,8 +9,8 @@
   --space-1: .25rem;
   --space-2: .5rem;
   --space-3: 1rem;
-  --space-4: 1.5rem;
-  --space-5: 2rem;
+  --space-4: 2rem;
+  --space-5: 2.5rem;
 
   /* light theme defaults */
   --bg: #f7f7fb;
@@ -61,11 +61,15 @@
 }
 
 /* ===== Layout ===== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
   color: var(--text);
   background: var(--bg);
-  line-height: 1.6;
+  line-height: 1.7;
   min-height: 100vh;
 }
 
@@ -107,24 +111,107 @@ nav a.pill {
 nav a.pill:hover {
   background: var(--accent);
   color: #fff;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--accent) 70%, transparent);
+}
+
+/* Header enhancements for profile and actions */
+.header-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.name-subtitle {
+  flex: 1;
+  min-width: 200px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.theme-toggle {
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: .35rem .7rem;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text);
+  transition: var(--transition);
+  font-size: 1rem;
+}
+
+.theme-toggle:hover {
+  background: var(--accent);
+  color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 0 12px color-mix(in srgb, var(--accent) 70%, transparent);
+}
+
+/* Accessibility focus styles */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 .main { padding-block: var(--space-5); }
 
 /* Cards with consistent internal padding and hover ring */
 .card {
-  background: var(--card);
+  background: linear-gradient(var(--card), var(--card)) padding-box,
+              linear-gradient(90deg, var(--accent), var(--accent-alt)) border-box;
+  border: 1px solid transparent;
   border-radius: var(--radius);
-  padding: clamp(1rem, 2.5vw, 1.5rem);
+  padding: clamp(1.25rem, 3vw, 2rem);
   box-shadow: var(--shadow);
   margin-block: var(--space-4);
   transition: var(--transition);
   position: relative;
-  border: 1px solid color-mix(in srgb, var(--text) 10%, transparent);
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
 }
-.card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.15); }
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .card h2 {
   margin-bottom: .9rem;
   font-size: 1.6rem;
@@ -142,6 +229,25 @@ nav a.pill:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
+}
+
+.skill-icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1.2em;
+  color: var(--accent);
+  transition: var(--transition);
+  animation: icon-bounce 2s infinite alternate;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+  color: var(--accent-alt);
+}
+
+@keyframes icon-bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-2px); }
 }
 .skill-group h3 { margin: .2rem 0 .5rem; font-size: 1.1rem; color: var(--text); opacity: .9; font-weight: 600; }
 ul { padding-left: 1.1rem; margin-block: .5rem; }
@@ -212,10 +318,35 @@ li { margin: .25rem 0; }
 
 /* ===== Responsive ===== */
 @media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .name { font-size: 1.85rem; }
   .subtitle { font-size: .95rem; }
   nav { gap: .4rem; }
+  nav a.pill {
+    padding: .6rem 1.2rem;
+    font-size: 1rem;
+  }
   ul { padding-left: 1rem; }
+
+  .profile-img {
+    width: 60px;
+    height: 60px;
+    align-self: flex-start;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ===== Reduced motion ===== */
